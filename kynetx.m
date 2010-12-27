@@ -7,6 +7,7 @@
 //
 
 #import "kynetx.h"
+#import "JSON.h"
 
 
 @implementation kynetx

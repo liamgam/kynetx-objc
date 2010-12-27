@@ -10,6 +10,5 @@
 
 int main(int argc, char *argv[])
 {
-	NSLog(@"I just started!");
 	return NSApplicationMain(argc,  (const char **) argv);
 }
