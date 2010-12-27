@@ -14,15 +14,19 @@
 	
 	SBJsonParser *parser; // json parser 
 	NSString *app_id; // will default to an a369 app
-	NSString *event_url; // for event url
+	NSString *event_domain; // for event domainb
 }
+
+-(id) init;
+-(id) initWithAppId:(id) input;
+-(id) initWithEventDomain:(id) input;
 
 // getters
 - (NSString*) app_id;
-- (NSString*) event_url;
+- (NSString*) event_domain;
 
 // setters
-- (void) setAppId: (NSString*) app_id;
-- (void) setEventUrl: (NSString*) event_url;
+- (void) setAppId: (NSString*) input;
+- (void) setEventDomain: (NSString*) input;
 
 @end
