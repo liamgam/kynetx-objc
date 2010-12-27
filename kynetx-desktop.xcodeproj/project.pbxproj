@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F50E31FE12C3534A00B1904E /* kynetx.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E31FD12C3534A00B1904E /* kynetx.m */; };
+		F54A371F12C922A900A2D51B /* appcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A371E12C922A900A2D51B /* appcontroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		8D1107320486CEB800E47090 /* kynetx-desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kynetx-desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50E31FC12C3534A00B1904E /* kynetx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kynetx.h; sourceTree = "<group>"; };
 		F50E31FD12C3534A00B1904E /* kynetx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kynetx.m; sourceTree = "<group>"; };
+		F54A371D12C922A900A2D51B /* appcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appcontroller.h; sourceTree = "<group>"; };
+		F54A371E12C922A900A2D51B /* appcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appcontroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,8 @@
 			children = (
 				F50E31FC12C3534A00B1904E /* kynetx.h */,
 				F50E31FD12C3534A00B1904E /* kynetx.m */,
+				F54A371D12C922A900A2D51B /* appcontroller.h */,
+				F54A371E12C922A900A2D51B /* appcontroller.m */,
 				256AC3D80F4B6AC300CF3369 /* kynetx_desktopAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* kynetx_desktopAppDelegate.m */,
 			);
@@ -186,6 +191,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* kynetx_desktopAppDelegate.m in Sources */,
 				F50E31FE12C3534A00B1904E /* kynetx.m in Sources */,
+				F54A371F12C922A900A2D51B /* appcontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
