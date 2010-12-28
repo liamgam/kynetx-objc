@@ -11,11 +11,14 @@
 
 @implementation AppController
 
+@synthesize app;
+
 -(IBAction) sendTestKynetx:(id) sender {
-	NSLog(@"yay!");
+	[self setApp:[[Kynetx alloc] initWithAppID:[appIDField stringValue]]];
+	BOOL ok = [app raiseEvent:@"jump_for_joy"];
 }
 
--(IBAction) getAppIDVal:(id) sender {
+-(IBAction) appIDVal:(id) sender {
 	NSLog(@"%@",[appIDField stringValue]);
 }
 

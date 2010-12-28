@@ -23,7 +23,8 @@
 -(id) init;
 -(id) initWithAppID:(id) input;
 
-// instance methods	
+// method to raise event to cs servers
+-(BOOL) raiseEvent:(NSString*) name; 
 
 // destructor
 -(void) dealloc;

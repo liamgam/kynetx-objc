@@ -14,10 +14,10 @@
 
 	IBOutlet NSButton *testKynetx;
 	IBOutlet NSTextField *appIDField;
-	Kynetx *app; 
 }
+@property (retain) Kynetx* app;
 - (IBAction) sendTestKynetx:(id) sender;
-- (IBAction) getAppIDVal:(id) sender; 
+- (IBAction) appIDVal:(id) sender; 
 - (void) dealloc;
 
 
