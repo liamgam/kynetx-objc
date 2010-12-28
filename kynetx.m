@@ -6,19 +6,21 @@
 //  Copyright 2010 Kynetx. All rights reserved.
 //
 
-#import "kynetx.h"
+#import "Kynetx.h"
 
 
 @implementation Kynetx
 
-
+// property synthesis
+@synthesize appid;
+@synthesize eventDomain;
 
 - (id) init	{
 	// if init is called directly, just pass nil to preferred constructor
-	return [self initWithAppId:nil];
+	return [self initWithAppID:nil];
 }
 
-- (id) initWithAppId:(id) input {
+- (id) initWithAppID:(id) input {
 	if (self = [super init]) {
 		if (input == nil) {
 			input = @"a369x123";
@@ -28,11 +30,6 @@
 	}
 	return self;
 }
-
-// property synthesis
-@synthesize appid;
-@synthesize eventDomain;
-@synthesize parser;
 
 // destructor
 - (void) dealloc {

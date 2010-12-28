@@ -1,5 +1,5 @@
 //
-//  appcontroller.h
+//  AppController.h
 //  kynetx-desktop
 //
 //  Created by Alex  on 12/27/10.
@@ -7,10 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Kynetx.h"
 
 
-@interface appcontroller : NSObject {
+@interface AppController : NSObject {
 
+	IBOutlet NSButton *testKynetx;
+	IBOutlet NSTextField *appIDField;
+	Kynetx *app; 
 }
+- (IBAction) sendTestKynetx:(id) sender;
+- (IBAction) getAppIDVal:(id) sender; 
+- (void) dealloc;
+
 
 @end

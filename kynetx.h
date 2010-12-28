@@ -18,11 +18,12 @@
 // properties
 @property (retain) NSString* eventDomain;
 @property (retain) NSString* appid;
-@property (retain) SBJsonParser* parser;
 
 // constructors
 -(id) init;
--(id) initWithAppId:(id) input;
+-(id) initWithAppID:(id) input;
+
+// instance methods	
 
 // destructor
 -(void) dealloc;

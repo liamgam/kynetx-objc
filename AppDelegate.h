@@ -8,10 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface kynetx_desktopAppDelegate : NSObject <NSApplicationDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+-(void) dealloc;
 
 @end
