@@ -32,6 +32,7 @@
 // property synthesis
 @synthesize appid;
 @synthesize eventDomain;
+@synthesize parser;
 
 // destructor
 - (void) dealloc {

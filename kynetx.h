@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JSON/JSON.h"
 
 // class for raising events and parsing returned directives
 
@@ -17,6 +18,7 @@
 // properties
 @property (retain) NSString* eventDomain;
 @property (retain) NSString* appid;
+@property (retain) SBJsonParser* parser;
 
 // constructors
 -(id) init;
