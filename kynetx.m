@@ -7,39 +7,37 @@
 //
 
 #import "kynetx.h"
-#import "JSON.h"
 
 
-@implementation kynetx
+@implementation Kynetx
+
+
 
 - (id) init	{
+	// if init is called directly, just pass nil to preferred constructor
+	return [self initWithAppId:nil];
+}
+
+- (id) initWithAppId:(id) input {
 	if (self = [super init]) {
-		// call other constructers here
+		if (input == nil) {
+			input = @"a369x123";
+		}
+		[self setAppid:input];
+		[self setEventDomain:@"desktop"];
 	}
-	
 	return self;
 }
 
-- (id) initWithAppid:
+// property synthesis
+@synthesize appid;
+@synthesize eventDomain;
 
-
-// getters
-- (NSString*) app_id {
-	return [self app_id];
-}
-
-- (NSString*) event_domain {
-	return [self event_domain];
-}
-
-// setters
-
-- (void) setAppId:(NSString *)input {
-	[self app_id] = input;
-}
-
-- (void) setEventDomain:(NSString *)input {
-	[self event_domain] = input;
+// destructor
+- (void) dealloc {
+	[appid release];
+	[eventDomain release];
+	[super dealloc];
 }
 
 @end

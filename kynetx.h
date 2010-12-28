@@ -10,23 +10,20 @@
 
 // class for raising events and parsing returned directives
 
-@interface kynetx : NSObject {
-	
-	SBJsonParser *parser; // json parser 
-	NSString *app_id; // will default to an a369 app
-	NSString *event_domain; // for event domainb
+@interface Kynetx : NSObject {
+	// silence is golden. Actually properties are golden. Hence this emptiness.
 }
 
+// properties
+@property (retain) NSString* eventDomain;
+@property (retain) NSString* appid;
+
+// constructors
 -(id) init;
 -(id) initWithAppId:(id) input;
--(id) initWithEventDomain:(id) input;
 
-// getters
-- (NSString*) app_id;
-- (NSString*) event_domain;
+// destructor
+-(void) dealloc;
 
-// setters
-- (void) setAppId: (NSString*) input;
-- (void) setEventDomain: (NSString*) input;
 
 @end
