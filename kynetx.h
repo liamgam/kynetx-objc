@@ -23,8 +23,14 @@
 -(id) init;
 -(id) initWithAppID:(id) input;
 
-// method to raise event to cs servers
--(BOOL) raiseEvent:(NSString*) name; 
+// raise event to cs servers
+-(NSArray*) raiseEvent:(NSString*) name params:(NSDictionary*) params; 
+
+// parse directives returned from app
+-(NSArray*) parseDirectives:(NSData*) response;
+
+// build a url from an NSDictionary
+-(NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
 
 // destructor
 -(void) dealloc;

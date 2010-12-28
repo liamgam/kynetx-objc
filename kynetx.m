@@ -31,25 +31,24 @@
 	return self;
 }
 
-- (BOOL) raiseEvent:(NSString *) name {
-	// TODO: seperate this method into two functions. One to raise event and one to parse directives.
-	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease]; // just send to autorelease pool;
+- (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
 	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]]]];
 	NSLog(@"Request URL: %@", request);
 	NSData* response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString* responseString = [[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding] autorelease]; // send to autorelease pool
+	return [self parseDirectives:response];
+}
+
+- (NSArray*) parseDirectives:(NSData*) response {
+	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
+	NSString* responseString = [[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding] autorelease];
 	NSLog(@"KNS Response: %@", responseString);
 	NSRange knsCommentRange = NSMakeRange(0, 32);
 	NSString* jsonString = [responseString stringByReplacingCharactersInRange:knsCommentRange withString:@""];
 	NSLog(@"jsonString: %@", jsonString);
-	NSArray* directives = [[parser objectWithString:jsonString] objectForKey:@"directives"];
-	NSLog(@"Directives: %@", directives);
-	for (NSDictionary* directive in directives) {
-		NSLog(@"%@", [directive objectForKey:@"name"]);
-	}
-	
-	return YES;
+	return [parser objectWithString:jsonString];
 }
+
+- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring 
 
 // destructor
 - (void) dealloc {
