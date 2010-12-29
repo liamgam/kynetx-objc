@@ -17,7 +17,7 @@
 
 - (id) init	{
 	// just pass nil to preferred constructor
-	return [self initWithAppID:nil];
+	return [[[self alloc] initWithAppID:nil] autorelease]; // return allocated, autoreleased instance
 }
 
 - (id) initWithAppID:(id) input {
@@ -35,6 +35,7 @@
 	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]]]];
 	NSLog(@"Request URL: %@", request);
 	NSData* response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	[self URLFromDict:[[[NSDictionary alloc] initWithObjectsAndKeys:@"yay",@"bay", nil] autorelease] withBaseURL:@"fdskljfdsjkdfsjklsdfkjldfsjklfdsjkl"];
 	return [self parseDirectives:response];
 }
 
@@ -48,7 +49,23 @@
 	return [parser objectWithString:jsonString];
 }
 
-- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring 
+- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
+	NSArray* keys = [params allKeys];
+	NSString* startChar;
+	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
+	int count = [keys count];
+	NSPredicate* hasQuestionMark = [[[NSPredicate alloc] initWithFormat:@"SELF matches %@", @"\?$"] autorelease];
+	if ([hasQuestionMark evaluateWithObject: URLstring]) {
+		// base string already has query question mark at the end
+	} else {
+		// needs question mark
+	}
+	
+	for (int i = 0; i < count; i++) {
+		id key = [keys objectAtIndex:i];
+		id value = [params objectForKey:key];
+	}
+}
 
 // destructor
 - (void) dealloc {
