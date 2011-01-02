@@ -21,7 +21,7 @@
 		F5186BE412D08A2600DFACB7 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BD912D08A2600DFACB7 /* SBJsonStreamWriterState.m */; };
 		F5186BE512D08A2600DFACB7 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BDB12D08A2600DFACB7 /* SBJsonTokeniser.m */; };
 		F5186BE612D08A2600DFACB7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BDD12D08A2600DFACB7 /* SBJsonWriter.m */; };
-		F5186BF512D08AA700DFACB7 /* kynetx.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BF412D08AA700DFACB7 /* kynetx.m */; };
+		F5186BF512D08AA700DFACB7 /* Kynetx.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BF412D08AA700DFACB7 /* Kynetx.m */; };
 		F5186BFC12D08AFF00DFACB7 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BFB12D08AFF00DFACB7 /* AppController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		F5186BDB12D08A2600DFACB7 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
 		F5186BDC12D08A2600DFACB7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		F5186BDD12D08A2600DFACB7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		F5186BED12D08A5A00DFACB7 /* kynetx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kynetx.h; sourceTree = "<group>"; };
-		F5186BF412D08AA700DFACB7 /* kynetx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kynetx.m; sourceTree = "<group>"; };
+		F5186BED12D08A5A00DFACB7 /* Kynetx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kynetx.h; sourceTree = "<group>"; };
+		F5186BF412D08AA700DFACB7 /* Kynetx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kynetx.m; sourceTree = "<group>"; };
 		F5186BF812D08AEA00DFACB7 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		F5186BFB12D08AFF00DFACB7 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +81,8 @@
 				F5186BCA12D08A2600DFACB7 /* JSON */,
 				256AC3D80F4B6AC300CF3369 /* AppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* AppDelegate.m */,
-				F5186BF412D08AA700DFACB7 /* kynetx.m */,
-				F5186BED12D08A5A00DFACB7 /* kynetx.h */,
+				F5186BF412D08AA700DFACB7 /* Kynetx.m */,
+				F5186BED12D08A5A00DFACB7 /* Kynetx.h */,
 				F5186BFB12D08AFF00DFACB7 /* AppController.m */,
 				F5186BF812D08AEA00DFACB7 /* AppController.h */,
 			);
@@ -254,7 +254,7 @@
 				F5186BE412D08A2600DFACB7 /* SBJsonStreamWriterState.m in Sources */,
 				F5186BE512D08A2600DFACB7 /* SBJsonTokeniser.m in Sources */,
 				F5186BE612D08A2600DFACB7 /* SBJsonWriter.m in Sources */,
-				F5186BF512D08AA700DFACB7 /* kynetx.m in Sources */,
+				F5186BF512D08AA700DFACB7 /* Kynetx.m in Sources */,
 				F5186BFC12D08AFF00DFACB7 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
