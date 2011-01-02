@@ -12,7 +12,6 @@
 /** 
  @brief An object that handles raising events to kynetx and parsing returned directives
  @author Alex Olson
- 
  */
 @interface Kynetx : NSObject {
 	// silence is golden. Actually properties are golden. Hence this emptiness.
@@ -30,7 +29,7 @@
  
  This is the ruleset that will recieve the events raised.
  */
-@property (readonly, nonatomic, retain) NSString* appid;
+@property (nonatomic, retain) NSString* appid;
 
 /** 
  @brief Basic init method.
