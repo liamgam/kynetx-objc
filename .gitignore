@@ -1,5 +1,9 @@
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
+Examples/*/build/
+Examples/*/*lproj/
+Examples/*/*.xcodeproj/*
+!Examples/*/*.xcodeproj/project.pbxproj
 *lproj/*
 *build/*
 *.pbxuser
