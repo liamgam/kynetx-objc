@@ -1,0 +1,196 @@
+Tkynetx-desktop
+v7
+r0
+t314790649.549210
+cCheck dependencies
+cProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Info.plist kynetx_desktop-Info.plist
+cCopyStringsFile /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch.gch kynetx_desktop_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-desktop/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx_desktopAppDelegate.o /Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop normal x86_64
+cTouch /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004BF2FD8700000000000000EE
+t1274215815
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/InfoPlist.strings
+c000000004D131B6C000000000000002D
+t1293097836
+s45
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib
+c000000004D131B6C000000000002BBB8
+t1293097836
+s179128
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app
+t1293097849
+s102
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Info.plist
+t1293097845
+s907
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop
+t1293097849
+s14680
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/PkgInfo
+t1293097845
+s8
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293097845
+s92
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293097845
+s34489
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx-desktop.LinkFileList
+c000000004D131B750000000000000117
+t1293097845
+s279
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx_desktopAppDelegate.o
+t1293097848
+s21288
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/main.o
+t1293097848
+s5000
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.h
+c000000004D131B6C000000000000013F
+t1293097836
+s319
+i<Cocoa/Cocoa.h>
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m
+c000000004D131B6C000000000000017B
+t1293097836
+s379
+i"kynetx_desktopAppDelegate.h"
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktop_Prefix.pch
+c000000004D131B6C000000000000009F
+t1293097836
+s159
+i<Cocoa/Cocoa.h>
+
+N/Users/alexolson/Documents/rws/kynetx-desktop/main.m
+c000000004D131B6C00000000000000F3
+t1293097836
+s243
+i<Cocoa/Cocoa.h>
+
+N/var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch.gch
+t1293097848
+s54306576
+
+Nkynetx_desktop-Info.plist
+c000000004D131B6C00000000000003EA
+t1293097836
+s1002
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies314790644#314790645#0(0"0(0#1#0"29836824280170608#0"0#
+
+CCompileC build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx_desktopAppDelegate.o /Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314790648.540376
+e314790648.786724
+r1
+xCompileC
+xbuild/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx_desktopAppDelegate.o
+x/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m314790648#314790648#0(0"0(0#0#73"/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m8605796064#1709"    cd /Users/alexolson/Documents/rws/kynetx-desktop    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug -I/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktopAppDelegate.m -o /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx_desktopAppDelegate.o0#
+
+CCompileC build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-desktop/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314790648.539098
+e314790648.768742
+r1
+xCompileC
+xbuild/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/main.o
+x/Users/alexolson/Documents/rws/kynetx-desktop/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/alexolson/Documents/rws/kynetx-desktop/main.m314790648#314790648#0(0"0(0#0#52"/Users/alexolson/Documents/rws/kynetx-desktop/main.m8605929600#1667"    cd /Users/alexolson/Documents/rws/kynetx-desktop    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug -I/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-desktop/main.m -o /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib
+s314790645.045120
+e314790645.371731
+r1
+xCompileXIB
+x/Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib314790645#314790645#0(0"0(0#0#72"/Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib8598500640#392"    cd /Users/alexolson/Documents/rws/kynetx-desktop    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/MainMenu.nib /Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s314790645.031423
+e314790645.192957
+r1
+xCopyStringsFile
+x/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings314790645#314790645#0(0"0(0#0#77"/Users/alexolson/Documents/rws/kynetx-desktop/English.lproj/InfoPlist.strings8599279040#386"    cd /Users/alexolson/Documents/rws/kynetx-desktop    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Resources/English.lproj0#
+
+CLd /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop normal x86_64
+s314790648.786818
+e314790649.528796
+r1
+xLd
+x/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop
+xnormal
+xx86_64
+lSLF07#2@111"Link /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop314790648#314790649#0(0"0(0#0#0"8605360832#612"    cd /Users/alexolson/Documents/rws/kynetx-desktop    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug -F/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug -filelist /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/Objects-normal/x86_64/kynetx-desktop.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/MacOS/kynetx-desktop0#
+
+CProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Info.plist kynetx_desktop-Info.plist
+s314790645.016251
+e314790645.031328
+r1
+xProcessInfoPlistFile
+x/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Info.plist
+xkynetx_desktop-Info.plist
+lSLF07#2@33"Process kynetx_desktop-Info.plist314790645#314790645#0(0"0(0#0#71"/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktop-Info.plist27584981513797680#352"    cd /Users/alexolson/Documents/rws/kynetx-desktop    builtin-infoPlistUtility kynetx_desktop-Info.plist -genpkginfo /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch.gch kynetx_desktop_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314790645.371860
+e314790648.538868
+r1
+xProcessPCH
+x/var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch.gch
+xkynetx_desktop_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile kynetx_desktop_Prefix.pch314790645#314790648#0(0"0(0#0#71"/Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktop_Prefix.pch8602712384#1559"    cd /Users/alexolson/Documents/rws/kynetx-desktop    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/kynetx-desktop-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug -I/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-desktop/build/kynetx-desktop.build/Debug/kynetx-desktop.build/DerivedSources -c /Users/alexolson/Documents/rws/kynetx-desktop/kynetx_desktop_Prefix.pch -o /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_desktop_Prefix-flezvdnoyslhgyddjbhlztbojucn/kynetx_desktop_Prefix.pch.gch0#
+
+CTouch /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app
+s314790649.528880
+e314790649.549153
+r1
+xTouch
+x/Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app
+lSLF07#2@82"Touch /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app314790649#314790649#0(0"0(0#0#0"8601121088#152"    cd /Users/alexolson/Documents/rws/kynetx-desktop    /usr/bin/touch -c /Users/alexolson/Documents/rws/kynetx-desktop/build/Debug/kynetx-desktop.app0#
+
