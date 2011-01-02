@@ -1,27 +1,27 @@
 Tkynetx-objc
 v7
 r0
-t315652913.262332
+t315653563.650623
 cCheck dependencies
-cProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Info.plist kynetx_objc-Info.plist
-cCopyStringsFile /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/alexolson/Documents/rws/kynetx-objc/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch.gch kynetx_objc_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-objc/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o /Users/alexolson/Documents/rws/kynetx-objc/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o /Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/NSObject+JSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserAdapter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriterState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonTokeniser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o /Users/alexolson/Documents/rws/kynetx-objc/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc normal x86_64
-cTouch /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app
+cProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Info.plist kynetx_objc-Info.plist
+cCopyStringsFile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch.gch kynetx_objc_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc normal x86_64
+cTouch /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004D1CD4EB00000000000000EE
@@ -77,6 +77,285 @@ N/Users/alexolson/Documents/rws/kynetx-objc/English.lproj/MainMenu.xib
 c000000004D203EB20000000000029231
 t1293958834
 s168497
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.h
+c000000004D1A0CEE00000000000001A2
+t1293552878
+s418
+i<Cocoa/Cocoa.h>
+i"Kynetx.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m
+c000000004D1A183500000000000001FB
+t1293555765
+s507
+i"AppController.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.h
+c000000004D19933D0000000000000142
+t1293521725
+s322
+i<Cocoa/Cocoa.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m
+c000000004D19934F000000000000025E
+t1293521743
+s606
+i"AppDelegate.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/English.lproj/InfoPlist.strings
+c000000004D131B6C000000000000002D
+t1293097836
+s45
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/English.lproj/MainMenu.xib
+c000000004D203EB20000000000029231
+t1293958834
+s168497
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/JSON.h
+c000000004D2045F50000000000000B5B
+t1293960693
+s2907
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+i"SBJsonStreamWriter.h"
+i"SBJsonStreamParser.h"
+i"SBJsonStreamParserAdapter.h"
+i"NSObject+JSON.h"
+i<JSON/SBJsonParser.h>
+i<JSON/SBJsonWriter.h>
+i<JSON/SBJsonStreamParser.h>
+i<JSON/SBJsonStreamParserAdapter.h>
+i<JSON/SBJsonStreamWriter.h>
+i<JSON/NSObject+JSON.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.h
+c000000004D2045F50000000000000899
+t1293960693
+s2201
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m
+c000000004D2045F500000000000008C2
+t1293960693
+s2242
+i"NSObject+JSON.h"
+i"SBJsonWriter.h"
+i"SBJsonParser.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.h
+c000000004D2045F50000000000000FCC
+t1293960693
+s4044
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m
+c000000004D2045F50000000000000D75
+t1293960693
+s3445
+i"SBJsonParser.h"
+i"SBJsonStreamParser.h"
+i"SBJsonStreamParserAdapter.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.h
+c000000004D2045F50000000000001163
+t1293960693
+s4451
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m
+c000000004D2045F50000000000001D9D
+t1293960693
+s7581
+i"SBJsonStreamParser.h"
+i"SBJsonTokeniser.h"
+i"SBJsonStreamParserState.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.h
+c000000004D2045F50000000000000C3B
+t1293960693
+s3131
+i<Foundation/Foundation.h>
+i"SBJsonStreamParser.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m
+c000000004D2045F500000000000011BC
+t1293960693
+s4540
+i"SBJsonStreamParserAdapter.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.h
+c000000004D2045F50000000000000C6F
+t1293960693
+s3183
+i<Foundation/Foundation.h>
+i"SBJsonTokeniser.h"
+i"SBJsonStreamParser.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m
+c000000004D2045F50000000000002754
+t1293960693
+s10068
+i"SBJsonStreamParserState.h"
+i"SBJsonStreamParser.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.h
+c000000004D2045F500000000000014F0
+t1293960693
+s5360
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m
+c000000004D2045F50000000000002893
+t1293960693
+s10387
+i"SBJsonStreamWriter.h"
+i"SBJsonStreamWriterState.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.h
+c000000004D2045F50000000000000B5D
+t1293960693
+s2909
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m
+c000000004D2045F50000000000001369
+t1293960693
+s4969
+i"SBJsonStreamWriterState.h"
+i"SBJsonStreamWriter.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.h
+c000000004D2045F500000000000008E7
+t1293960693
+s2279
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m
+c000000004D2045F50000000000002745
+t1293960693
+s10053
+i"SBJsonTokeniser.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.h
+c000000004D2045F500000000000012F9
+t1293960693
+s4857
+i<Foundation/Foundation.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m
+c000000004D2045F50000000000000C98
+t1293960693
+s3224
+i"SBJsonWriter.h"
+i"SBJsonStreamWriter.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.h
+c000000004D20462700000000000007DB
+t1293960743
+s2011
+i<Cocoa/Cocoa.h>
+i"JSON/JSON.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m
+c000000004D2046270000000000000A5D
+t1293960743
+s2653
+i"Kynetx.h"
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app
+t1293960763
+s102
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Info.plist
+t1293960026
+s898
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc
+t1293960763
+s128872
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/PkgInfo
+t1293960026
+s8
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293959759
+s92
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293959759
+s37092
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o
+t1293960763
+s18780
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o
+t1293960762
+s22724
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o
+t1293960762
+s21652
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o
+t1293960762
+s9636
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o
+t1293960762
+s20500
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o
+t1293960762
+s33872
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o
+t1293960762
+s29220
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o
+t1293960763
+s49356
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o
+t1293960763
+s48140
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o
+t1293960763
+s28068
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o
+t1293960763
+s32064
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o
+t1293960763
+s21944
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/kynetx-objc.LinkFileList
+c000000004D204637000000000000078F
+t1293960759
+s1935
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o
+t1293960762
+s5032
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/kynetx_objc_Prefix.pch
+c000000004D131B6C000000000000009F
+t1293097836
+s159
+i<Cocoa/Cocoa.h>
+
+N/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m
+c000000004D1922A600000000000000F0
+t1293492902
+s240
+i<Cocoa/Cocoa.h>
 
 N/Users/alexolson/Documents/rws/kynetx-objc/JSON/JSON.h
 c000000004D19332B0000000000000B5B
@@ -335,6 +614,10 @@ N/var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/Shared
 t1293960029
 s54306576
 
+N/var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch.gch
+t1293960762
+s54306576
+
 Nkynetx_obj-Info.plist
 c00000000000000000000000000000000
 t2
@@ -347,7 +630,7 @@ s1002
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies315652913#315652913#0(0"0(0#1#0"32651522506817640#0"0#
+lSLF07#2@18"Check dependencies315653558#315653559#0(0"0(0#1#0"32651522506817640#0"0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o /Users/alexolson/Documents/rws/kynetx-objc/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.820849
@@ -369,6 +652,26 @@ o/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: initial
 o/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: unused variable 'ok'
 lSLF07#2@66"Compile /Users/alexolson/Documents/rws/kynetx-objc/AppController.m315652830#315652830#0(770"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m: In function '-[AppController sendTestKynetx:]':/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: 'Kynetx' may not respond to '-raiseEvent:'/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: (Messages without a matching method signature/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: will be assumed to return 'id' and accept/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: '...' as arguments.)/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: initialization makes integer from pointer without a cast/Users/alexolson/Documents/rws/kynetx-objc/AppController.m:18: warning: unused variable 'ok'4(22@42"'Kynetx' may not respond to '-raiseEvent:'315652830#108#115#0(6@58"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m315248565#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)315652830#223#118#0(6@58"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m315248565#18#0#18#0#0"0(22@56"Initialization makes integer from pointer without a cast315652830#548#129#0(6@58"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m315248565#18#0#18#0#0"0(22@20"Unused variable 'ok'315652830#677#93#0(6@58"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m315248565#18#0#18#0#19"unused variable '*'0(0#0#58"/Users/alexolson/Documents/rws/kynetx-objc/AppController.m8603788896#1592"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/AppController.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653563.445158
+e315653563.595766
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m: In function '-[AppController sendTestKynetx:]':
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: 'Kynetx' may not respond to '-raiseEvent:'
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: (Messages without a matching method signature
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: will be assumed to return 'id' and accept
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: '...' as arguments.)
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: initialization makes integer from pointer without a cast
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: unused variable 'ok'
+lSLF07#2@84"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m315653563#315653563#0(896"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m: In function '-[AppController sendTestKynetx:]':/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: 'Kynetx' may not respond to '-raiseEvent:'/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: (Messages without a matching method signature/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: will be assumed to return 'id' and accept/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: '...' as arguments.)/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: initialization makes integer from pointer without a cast/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m:18: warning: unused variable 'ok'4(22@42"'Kynetx' may not respond to '-raiseEvent:'315653563#126#133#0(6@76"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m315248565#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)315653563#259#136#0(6@76"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m315248565#18#0#18#0#0"0(22@56"Initialization makes integer from pointer without a cast315653563#638#147#0(6@76"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m315248565#18#0#18#0#0"0(22@20"Unused variable 'ok'315653563#785#111#0(6@76"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m315248565#18#0#18#0#19"unused variable '*'0(0#0#76"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m8601888640#1790"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppController.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppController.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o /Users/alexolson/Documents/rws/kynetx-objc/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.546198
 e315652829.724812
@@ -381,6 +684,42 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@64"Compile /Users/alexolson/Documents/rws/kynetx-objc/AppDelegate.m315652829#315652829#0(0"0(0#0#56"/Users/alexolson/Documents/rws/kynetx-objc/AppDelegate.m8605843392#1588"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/AppDelegate.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.281612
+e315653562.449996
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m315653562#315653562#0(0"0(0#0#74"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m8601070080#1786"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/AppDelegate.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/AppDelegate.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.443693
+e315653562.642845
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx init]':
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: 'Kynetx' may not respond to '-alloc'
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: (Messages without a matching method signature
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: will be assumed to return 'id' and accept
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: '...' as arguments.)
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx initWithAppID:]':
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:29: warning: 'Kynetx' may not respond to '-setEventDomain:'
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx URLFromDict:withBaseURL:]':
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:68: warning: unused variable 'value'
+o/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:71: warning: control reaches end of non-void function
+lSLF07#2@77"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653562#315653562#0(1172"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx init]':/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: 'Kynetx' may not respond to '-alloc'/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: (Messages without a matching method signature/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: will be assumed to return 'id' and accept/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:20: warning: '...' as arguments.)/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx initWithAppID:]':/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:29: warning: 'Kynetx' may not respond to '-setEventDomain:'/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m: In function '-[Kynetx URLFromDict:withBaseURL:]':/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:68: warning: unused variable 'value'/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m:71: warning: control reaches end of non-void function5(22@36"'Kynetx' may not respond to '-alloc'315653562#101#120#0(6@69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653543#20#0#20#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)315653562#221#129#0(6@69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653543#20#0#20#0#0"0(22@46"'Kynetx' may not respond to '-setEventDomain:'315653562#690#130#0(6@69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653543#29#0#29#0#26"'*' may not respond to '*'0(22@23"Unused variable 'value'315653562#941#107#0(6@69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653543#68#0#68#0#19"unused variable '*'0(22@40"Control reaches end of non-void function315653562#1048#124#0(6@69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m315653543#71#0#71#0#40"control reaches end of non-void function0(0#0#69"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m8603226176#1776"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/Kynetx.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o /Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.715130
@@ -405,6 +744,19 @@ o/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:68: warning: unused variabl
 o/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:71: warning: control reaches end of non-void function
 lSLF07#2@59"Compile /Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315652829#315652829#0(992"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m: In function '-[Kynetx init]':/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:20: warning: 'Kynetx' may not respond to '-alloc'/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:20: warning: (Messages without a matching method signature/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:20: warning: will be assumed to return 'id' and accept/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:20: warning: '...' as arguments.)/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m: In function '-[Kynetx initWithAppID:]':/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:29: warning: 'Kynetx' may not respond to '-setEventDomain:'/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m: In function '-[Kynetx URLFromDict:withBaseURL:]':/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:68: warning: unused variable 'value'/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m:71: warning: control reaches end of non-void function5(22@36"'Kynetx' may not respond to '-alloc'315652829#83#102#0(6@51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315647208#20#0#20#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)315652829#185#111#0(6@51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315647208#20#0#20#0#0"0(22@46"'Kynetx' may not respond to '-setEventDomain:'315652829#582#112#0(6@51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315647208#29#0#29#0#26"'*' may not respond to '*'0(22@23"Unused variable 'value'315652829#797#89#0(6@51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315647208#68#0#68#0#19"unused variable '*'0(22@40"Control reaches end of non-void function315652829#886#106#0(6@51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m315647208#71#0#71#0#40"control reaches end of non-void function0(0#0#51"/Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m8603646496#1578"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Kynetx.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/Kynetx.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.450097
+e315653562.633169
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m315653562#315653562#0(0"0(0#0#81"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m8602824672#1795"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/NSObject+JSON.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/NSObject+JSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.724913
 e315652829.896904
@@ -417,6 +769,19 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/NSObject+JSON.m315652829#315652829#0(0"0(0#0#63"/Users/alexolson/Documents/rws/kynetx-objc/JSON/NSObject+JSON.m8603450336#1597"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/NSObject+JSON.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/NSObject+JSON.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.633267
+e315653562.817269
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m315653562#315653562#0(0"0(0#0#80"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m7809643567100341248#1793"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonParser.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.897007
@@ -431,6 +796,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonParser.m315652829#315652830#0(0"0(0#0#62"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonParser.m8601700448#1595"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonParser.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonParser.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.642944
+e315653562.857499
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m315653562#315653562#0(0"0(0#0#86"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m8603275936#1805"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParser.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.919388
 e315652830.178461
@@ -443,6 +821,19 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@76"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParser.m315652829#315652830#0(0"0(0#0#68"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParser.m8601242912#1607"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParser.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParser.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.817382
+e315653562.999468
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m315653562#315653563#0(0"0(0#0#93"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m8602473888#1819"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserAdapter.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserAdapter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.128018
@@ -457,6 +848,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@83"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserAdapter.m315652830#315652830#0(0"0(0#0#75"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserAdapter.m8603529120#1621"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserAdapter.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserAdapter.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.857601
+e315653563.077463
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m315653562#315653563#0(0"0(0#0#91"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m8600344224#1815"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamParserState.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.178560
 e315652830.418032
@@ -469,6 +873,19 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@81"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserState.m315652830#315652830#0(0"0(0#0#73"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserState.m8601829152#1617"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamParserState.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamParserState.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.999575
+e315653563.275478
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m315653562#315653563#0(0"0(0#0#86"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m8601623168#1805"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriter.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.353218
@@ -483,6 +900,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@76"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriter.m315652830#315652830#0(0"0(0#0#68"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriter.m8603723072#1607"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriter.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriter.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653563.077559
+e315653563.266136
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m315653563#315653563#0(0"0(0#0#91"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m8599773344#1815"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonStreamWriterState.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriterState.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.418135
 e315652830.583361
@@ -495,6 +925,19 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@81"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriterState.m315652830#315652830#0(0"0(0#0#73"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriterState.m8603552224#1617"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonStreamWriterState.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonStreamWriterState.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653563.266236
+e315653563.507109
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m315653563#315653563#0(0"0(0#0#83"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m8603818208#1799"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonTokeniser.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonTokeniser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.583468
@@ -509,6 +952,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@73"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonTokeniser.m315652830#315652830#0(0"0(0#0#65"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonTokeniser.m8598985568#1601"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonTokeniser.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonTokeniser.o0#
 
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653563.275581
+e315653563.445047
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m315653563#315653563#0(0"0(0#0#80"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m8603084736#1793"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/JSON/SBJsonWriter.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o0#
+
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652830.628609
 e315652830.820725
@@ -521,6 +977,19 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonWriter.m315652830#315652830#0(0"0(0#0#62"/Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonWriter.m8598235424#1595"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/JSON/SBJsonWriter.m -o /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/SBJsonWriter.o0#
+
+CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653562.280377
+e315653562.443579
+r1
+xCompileC
+xbuild/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m315653562#315653562#0(0"0(0#0#67"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m8599751552#1772"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -include /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/main.m -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/main.o /Users/alexolson/Documents/rws/kynetx-objc/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315652829.545253
@@ -543,6 +1012,12 @@ xCompileXIB
 x/Users/alexolson/Documents/rws/kynetx-objc/English.lproj/MainMenu.xib
 lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib315652559#315652559#0(0"0(0#0#69"/Users/alexolson/Documents/rws/kynetx-objc/English.lproj/MainMenu.xib8603733536#380"    cd /Users/alexolson/Documents/rws/kynetx-objc    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/MainMenu.nib /Users/alexolson/Documents/rws/kynetx-objc/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
 
+CCompileXIB /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/English.lproj/MainMenu.xib
+r0
+
+CCopyStringsFile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
+
 CCopyStringsFile /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 s315652559.163470
 e315652559.328533
@@ -551,6 +1026,16 @@ xCopyStringsFile
 x/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj/InfoPlist.strings
 xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings315652559#315652559#0(0"0(0#0#74"/Users/alexolson/Documents/rws/kynetx-objc/English.lproj/InfoPlist.strings8603967232#377"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Resources/English.lproj0#
+
+CLd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc normal x86_64
+s315653563.595856
+e315653563.647940
+r1
+xLd
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc
+xnormal
+xx86_64
+lSLF07#2@120"Link /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc315653563#315653563#0(0"0(0#0#0"8603055552#672"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -filelist /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/kynetx-objc.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc0#
 
 CLd /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc normal x86_64
 s315652830.967489
@@ -561,6 +1046,9 @@ x/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents
 xnormal
 xx86_64
 lSLF07#2@102"Link /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc315652830#315652831#0(0"0(0#0#0"8604344544#582"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -filelist /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/Objects-normal/x86_64/kynetx-objc.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/MacOS/kynetx-objc0#
+
+CProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app/Contents/Info.plist kynetx_objc-Info.plist
+r0
 
 CProcessInfoPlistFile /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app/Contents/Info.plist kynetx_obj-Info.plist
 s315652559.068502
@@ -608,6 +1096,27 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@33"Precompile kynetx_objc_Prefix.pch315652826#315652829#0(0"0(0#0#65"/Users/alexolson/Documents/rws/kynetx-objc/kynetx_objc_Prefix.pch8605811552#1472"    cd /Users/alexolson/Documents/rws/kynetx-objc    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -c /Users/alexolson/Documents/rws/kynetx-objc/kynetx_objc_Prefix.pch -o /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-dgonewcxmmvtmedcurxglmnfvavl/kynetx_objc_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch.gch kynetx_objc_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315653559.129028
+e315653562.280107
+r1
+xProcessPCH
+x/var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch.gch
+xkynetx_objc_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile kynetx_objc_Prefix.pch315653559#315653562#0(0"0(0#0#83"/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/kynetx_objc_Prefix.pch7665811971571475456#1652"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-generated-files.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-own-target-headers.hmap -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-all-target-headers.hmap -iquote /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/kynetx-objc-project-headers.hmap -F/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/include -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources/x86_64 -I/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/kynetx-objc.build/Debug/kynetx-objc.build/DerivedSources -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/kynetx_objc_Prefix.pch -o /var/folders/dX/dXLF9-IfFq4LtR9wKqLAMU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/kynetx_objc_Prefix-erlnsqxtxnsedwcwoydmltwpmruk/kynetx_objc_Prefix.pch.gch0#
+
+CTouch /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app
+s315653563.648033
+e315653563.650582
+r1
+xTouch
+x/Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app
+lSLF07#2@94"Touch /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app315653563#315653563#0(0"0(0#0#0"8602163488#179"    cd /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp    /usr/bin/touch -c /Users/alexolson/Documents/rws/kynetx-objc/Examples/CocoaApp/build/Debug/kynetx-objc.app0#
 
 CTouch /Users/alexolson/Documents/rws/kynetx-objc/build/Debug/kynetx-objc.app
 s315652831.020391
