@@ -33,7 +33,6 @@
 
 /** 
  @brief Basic init method.
- 
  @returns self 
  */
 -(id) init;
@@ -56,13 +55,23 @@
  for more information regarding events.
  @param name name of the event to raise
  @param params a dictionary of key-value pairs to send to kynetx ruleset
+ @returns result of parseDirectives
  */
 -(NSArray*) raiseEvent:(NSString*) name params:(NSDictionary*) params; 
 
-/// parse directives returned from app
+/**
+ @brief parse directives returned by KNS for a raised event
+ @param response NSData* object returned by a GET request
+ @returns NSArray* of NSDictionary* directives
+*/
 -(NSArray*) parseDirectives:(NSData*) response;
 
-/// build a url from an NSDictionary
+/**
+ @brief build a NSURL* from a NSDictionary and a NSString
+ @param params url paramaters to add to url string
+ @param URLString URL string to add params to
+ @returns NSURL* 
+ */
 -(NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
 
 /// destructor
