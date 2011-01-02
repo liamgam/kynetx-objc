@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'kynetx-desktop' target in the 'kynetx-desktop' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
