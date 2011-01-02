@@ -36,7 +36,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8D1107310486CEB800E47090 /* kynetx_desktop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "kynetx_desktop-Info.plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* kynetx_objc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "kynetx_objc-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* kynetx-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kynetx-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50E31FC12C3534A00B1904E /* Kynetx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kynetx.h; sourceTree = "<group>"; };
 		F50E31FD12C3534A00B1904E /* Kynetx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kynetx.m; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107310486CEB800E47090 /* kynetx_desktop-Info.plist */,
+				8D1107310486CEB800E47090 /* kynetx_objc-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -291,8 +291,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = kynetx_desktop_Prefix.pch;
-				INFOPLIST_FILE = "kynetx_desktop-Info.plist";
+				GCC_PREFIX_HEADER = kynetx_objc_Prefix.pch;
+				INFOPLIST_FILE = "kynetx_objc-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "kynetx-objc";
 			};
@@ -305,8 +305,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = kynetx_desktop_Prefix.pch;
-				INFOPLIST_FILE = "kynetx_desktop-Info.plist";
+				GCC_PREFIX_HEADER = kynetx_objc_Prefix.pch;
+				INFOPLIST_FILE = "kynetx_objc-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "kynetx-objc";
 			};
