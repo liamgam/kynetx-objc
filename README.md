@@ -1,2 +1,2 @@
-# Kynetx Desktop Endpoint
- A desktop endpoint for Kynetx written in objective-c.
+# Kynetx Objective-C Library
+ A Kynetx Objective-C library.
