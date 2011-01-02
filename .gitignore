@@ -1,6 +1,6 @@
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
-*.lproj/*
+*lproj/*
 *build/*
 *.pbxuser
 *.mode1v3
