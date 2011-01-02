@@ -13,3 +13,4 @@ profile
 *.o
 *.swp
 *docs/
+*Doxyfile
