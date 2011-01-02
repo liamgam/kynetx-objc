@@ -12,3 +12,4 @@ profile
 *.app
 *.o
 *.swp
+*docs/

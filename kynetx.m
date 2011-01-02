@@ -28,7 +28,7 @@
 		[self setAppid:input];
 		[self setEventDomain:@"desktop"];
 	}
-	return self;
+	return self; // need to return alloced instance
 }
 
 - (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
@@ -50,20 +50,23 @@
 }
 
 - (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
-	NSArray* keys = [params allKeys];
-	NSString* startChar;
 	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
-	int count = [keys count];
 	NSPredicate* hasQuestionMark = [[[NSPredicate alloc] initWithFormat:@"SELF matches %@", @"\?$"] autorelease];
-	if ([hasQuestionMark evaluateWithObject: URLstring]) {
-		// base string already has query question mark at the end
+	if (![hasQuestionMark evaluateWithObject: URLstring]) {
+		// if the base url string does not have a question mark at the end, we need to add it
+		[buildString appendFormat:@"%@%@", URLstring, @"?"];
 	} else {
-		// needs question mark
+		// no question mark needed
+		[buildString appendString:URLstring];
 	}
 	
+	// loop over params dictionary, appending each key-value pair to url string
+	NSArray* keys = [params allKeys];
+	int count = [keys count];
 	for (int i = 0; i < count; i++) {
 		id key = [keys objectAtIndex:i];
 		id value = [params objectForKey:key];
+		
 	}
 }
 
