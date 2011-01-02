@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'kynetx-desktop' target in the 'kynetx-desktop' project
+// Prefix header for all source files of the 'kynetx-objc' target in the 'kynetx-objc' project
 //
 
 #ifdef __OBJC__
