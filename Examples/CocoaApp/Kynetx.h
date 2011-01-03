@@ -11,7 +11,6 @@
 
 /**
  @mainpage %Kynetx Objective-C Library
- 
  This is a library for interacting with <a href = "http://www.kynetx.com" target="_blank">Kynetx</a>.
  @author Alex Olson
  */
