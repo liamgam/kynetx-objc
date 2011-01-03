@@ -14,6 +14,7 @@
  
  This is a library for interacting with <a href = "http://www.kynetx.com" target="_blank">Kynetx</a>.
  @author Alex Olson
+ */
 
 /** 
  @brief An object that handles raising events to kynetx and parsing returned directives
@@ -39,7 +40,7 @@
 
 /** 
  @brief Basic init method.
- @returns self 
+ @return self 
  */
 -(id) init;
 
@@ -48,7 +49,7 @@
  
  This is the preferred initialization method. 
  @param input the appid to initialize the object with. 
- @returns self
+ @return self
  */
 -(id) initWithAppID:(id) input;
 
@@ -61,14 +62,14 @@
  for more information regarding events.
  @param name name of the event to raise
  @param params a dictionary of key-value pairs to send to kynetx ruleset
- @returns result of parseDirectives
+ @return result of parseDirectives
  */
 -(NSArray*) raiseEvent:(NSString*) name params:(NSDictionary*) params; 
 
 /**
  @brief parse directives returned by KNS for a raised event
  @param response NSData* object returned by a GET request
- @returns NSArray* of NSDictionary* directives
+ @return NSArray* of NSDictionary* directives
 */
 -(NSArray*) parseDirectives:(NSData*) response;
 
@@ -76,11 +77,14 @@
  @brief build a NSURL* from a NSDictionary and a NSString
  @param params url paramaters to add to url string
  @param URLString URL string to add params to
- @returns NSURL* 
+ @return NSURL* 
  */
 -(NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
 
-/// destructor
+/** 
+ @brief releases object alloced memory
+ @return void
+ */
 -(void) dealloc;
 
 
