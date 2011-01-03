@@ -15,7 +15,7 @@
 
 -(IBAction) sendTestKynetx:(id) sender {
 	[self setApp:[[Kynetx alloc] initWithAppID:[appIDField stringValue]]];
-	BOOL ok = [app raiseEvent:@"jump_for_joy"];
+	NSArray* ok = [app raiseEvent:@"jump_for_joy" params:[NSDictionary dictionaryWithObjectsAndKeys:@"yay", @"nay", @"ok", @"false", nil]];
 }
 
 -(IBAction) appIDVal:(id) sender {
