@@ -41,7 +41,6 @@
 
 @property (copy) NSString *error;
 
-- (const char *)bytes;
 - (void)skipWhitespace;
 
 - (sbjson_token_t)match:(const char *)utf8 ofLength:(NSUInteger)len andReturn:(sbjson_token_t)tok;
@@ -62,13 +61,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		offset = length = 0;
+		tokenStart = tokenLength = 0;
 		buf = [[NSMutableData alloc] initWithCapacity:4096];
 	}
 	return self;
 }
 
 - (void)dealloc {
+	self.error = nil;
 	[buf release];
 	[super dealloc];
 }
@@ -81,24 +81,27 @@
 	if (buf.length)
 		buf.length = buf.length - 1;
 	
-	if (offset) {
+	if (tokenStart) {
 		// Remove stuff in the front of the offset
-		[buf replaceBytesInRange:NSMakeRange(0, offset) withBytes:"" length:0];
-		offset = 0;
+		[buf replaceBytesInRange:NSMakeRange(0, tokenStart) withBytes:"" length:0];
+		tokenStart = 0;
 	}
 		
 	[buf appendData:data];
 	
 	// Append NUL byte to simplify logic
 	[buf appendBytes:"\0" length:1];
+	
+	bufbytes = [buf bytes];
+	bufbytesLength = [buf length];
 }
 
 - (BOOL)getToken:(const char **)utf8 length:(NSUInteger *)len {
-	if (!length)
+	if (!tokenLength)
 		return NO;
 	
-	*len = length;
-	*utf8 = [self bytes];
+	*len = tokenLength;
+	*utf8 = bufbytes + tokenStart;
 	return YES;
 }
 
@@ -176,43 +179,43 @@ again: while (i < len) {
 
 
 - (sbjson_token_t)next {
-	offset += length;
-	length = 0;
+	tokenStart += tokenLength;
+	tokenLength = 0;
 
 	[self skipWhitespace];
 	
-	switch (*[self bytes]) {
+	switch (*(bufbytes + tokenStart)) {
 		case '\0':
 			return sbjson_token_eof;
 			break;
 			
 		case '[':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_array_start;
 			break;
 			
 		case ']':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_array_end;
 			break;
 			
 		case '{':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_object_start;
 			break;
 			
 		case ':':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_key_value_separator;
 			break;
 			
 		case '}':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_object_end;
 			break;
 			
 		case ',':
-			length = 1;
+			tokenLength = 1;
 			return sbjson_token_separator;
 			break;
 			
@@ -238,36 +241,27 @@ again: while (i < len) {
 			break;			
 			
 		case '+':
-			self.error = [NSString stringWithFormat:@"Leading + is illegal in numbers at offset %u", offset];
+			self.error = [NSString stringWithFormat:@"Leading + is illegal in numbers at offset %u", tokenStart];
 			return sbjson_token_error;
 			break;			
 	}
 	
-	self.error = [NSString stringWithFormat:@"Unrecognised leading character at offset %u", offset];
+	self.error = [NSString stringWithFormat:@"Unrecognised leading character at offset %u", tokenStart];
 	return sbjson_token_error;
 }
 
 #pragma mark Private methods
 
-- (const char *)bytes {
-	if (offset == buf.length)
-		return ""; // dereferencing this sees the NUL byte.
-	
-	return (const char *)[buf bytes] + offset;
-}
-
 - (void)skipWhitespace {
-	const char *b = [self bytes];
-	
-	for (;;) {
-		switch (*b++) {
+	while (tokenStart < bufbytesLength) {
+		switch (bufbytes[tokenStart]) {
 			case ' ':
 			case '\t':
 			case '\n':
 			case '\r':
 			case '\f':
 			case '\v':
-				offset++;
+				tokenStart++;
 				break;
 			default:
 				return;
@@ -277,16 +271,16 @@ again: while (i < len) {
 }
 
 - (sbjson_token_t)match:(const char *)utf8 ofLength:(NSUInteger)len andReturn:(sbjson_token_t)tok {
-	if (buf.length - offset - 1 < len)
+	if (buf.length - tokenStart - 1 < len)
 		return sbjson_token_eof;
 	
-	if (strncmp([self bytes], utf8, len)) {
+	if (strncmp(bufbytes + tokenStart, utf8, len)) {
 		NSString *format = [NSString stringWithFormat:@"Expected '%%s' but found '%%.%us'.", len];
-		self.error = [NSString stringWithFormat:format, utf8, [self bytes]];
+		self.error = [NSString stringWithFormat:format, utf8, bufbytes + tokenStart];
 		return sbjson_token_error;
 	}
 	
-	length = len;
+	tokenLength = len;
 	return tok;
 }
 
@@ -362,9 +356,9 @@ again: while (i < len) {
 - (sbjson_token_t)matchString {
 	sbjson_token_t ret = sbjson_token_string;
 
-	const char *bytes = [self bytes];
+	const char *bytes = bufbytes + tokenStart;
 	NSUInteger idx = 1;
-	NSUInteger maxIdx = buf.length - 2 - offset;
+	NSUInteger maxIdx = buf.length - 2 - tokenStart;
 	
 	while (idx <= maxIdx) {
 		switch (bytes[idx++]) {
@@ -401,14 +395,14 @@ again: while (i < len) {
 						break;
 					}
 					default:
-						self.error = [NSString stringWithFormat:@"Broken escape character in token starting at offset %u", offset];
+						self.error = [NSString stringWithFormat:@"Broken escape character at index %u in token starting at offset %u", idx-1, tokenStart];
 						return sbjson_token_error;
 						break;
 				}
 				break;
 				
 			case '"':
-				length = idx;
+				tokenLength = idx;
 				return ret;
 				break;
 				
@@ -424,7 +418,7 @@ again: while (i < len) {
 - (sbjson_token_t)matchNumber {
 
 	sbjson_token_t ret = sbjson_token_integer;
-	const char *c = [self bytes];
+	const char *c = bufbytes + tokenStart;
 
 	if (*c == '-') {
 		c++;
@@ -437,7 +431,7 @@ again: while (i < len) {
 	if (*c == '0') {
 		c++;
 		if (isDigit(c)) {
-			self.error = [NSString stringWithFormat:@"Leading zero is illegal in number at offset %u", offset];
+			self.error = [NSString stringWithFormat:@"Leading zero is illegal in number at offset %u", tokenStart];
 			return sbjson_token_error;
 		}
 	}
@@ -450,7 +444,7 @@ again: while (i < len) {
 		c++;
 		
 		if (!isDigit(c) && *c) {
-			self.error = [NSString stringWithFormat:@"No digits after decimal point at offset %u", offset];
+			self.error = [NSString stringWithFormat:@"No digits after decimal point at offset %u", tokenStart];
 			return sbjson_token_error;
 		}
 		
@@ -465,7 +459,7 @@ again: while (i < len) {
 			c++;
 	
 		if (!isDigit(c) && *c) {
-			self.error = [NSString stringWithFormat:@"No digits after exponent mark at offset %u", offset];
+			self.error = [NSString stringWithFormat:@"No digits after exponent mark at offset %u", tokenStart];
 			return sbjson_token_error;
 		}
 		
@@ -475,7 +469,7 @@ again: while (i < len) {
 	if (!*c)
 		return sbjson_token_eof;
 	
-	length = c - [self bytes];
+	tokenLength = c - (bufbytes + tokenStart);
 	return ret;
 }
 

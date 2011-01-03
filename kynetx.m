@@ -33,11 +33,11 @@
 		[self setAppid:input];
 		// need to see if there's a better way to do this. 
 		// the purpose of this check is to see what event domain to set. 
-		// if NSapp is true, then we are in a Cocoa app
+		// if NSapp exists, then we are most likely in a Cocoa app
 		if (NSApp) {
 			[self setEventDomain:@"desktop"];
 		} else {
-			[self setEventDomain:@"iphone"];
+			[self setEventDomain:@"mobile"];
 		}
 	}
 	return self;
