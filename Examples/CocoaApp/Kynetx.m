@@ -30,29 +30,47 @@
 
 - (id) initWithAppID:(id) input {
 	if (self = [super init]) {
-		if (input == nil) {
-			input = @"a369x123";
-		}
 		[self setAppid:input];
-		[self setEventDomain:@"desktop"];
+		// need to see if there's a better way to do this. 
+		// the purpose of this check is to see what event domain to set. 
+		// if NSapp is true, then we are in a Cocoa app
+		if (NSApp) {
+			[self setEventDomain:@"desktop"];
+		} else {
+			[self setEventDomain:@"iphone"];
+		}
 	}
 	return self;
 }
 
 - (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
-	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@?", [self eventDomain], name, [self appid]];
+	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]];
 	NSURL* url = [self URLFromDict:params withBaseURL:urlString];
-	NSLog(@"URL STRING IN RAISEEVENT: %@",url);
+	NSURLRequest* request = [NSURLRequest requestWithURL:url];
+	NSLog(@"Request: %@", request);
+	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	return [self parseDirectives:knsResponse];
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
 	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
 	NSString* responseString = [[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding] autorelease];
-	NSLog(@"KNS Response: %@", responseString);
 	NSRange knsCommentRange = NSMakeRange(0, 32);
 	NSString* jsonString = [responseString stringByReplacingCharactersInRange:knsCommentRange withString:@""];
-	NSLog(@"jsonString: %@", jsonString);
-	return [parser objectWithString:jsonString];
+	NSArray* rawDirectives = [[parser objectWithString:jsonString] objectForKey:@"directives"];
+	NSMutableArray* directives = [[[NSMutableArray alloc] initWithCapacity:20] autorelease];
+	for (NSDictionary *rawDirective in rawDirectives) {
+		NSDictionary* meta = [rawDirective objectForKey:@"meta"];
+		NSDictionary* directive = [NSDictionary dictionaryWithObjectsAndKeys:
+								   [meta objectForKey:@"rid"], @"rid",
+								   [meta objectForKey:@"rule_name"], @"rule_name",
+								   [meta objectForKey:@"txn_id"], @"txn_id",
+								   [rawDirective objectForKey:@"name"], @"action",
+								   [rawDirective objectForKey:@"options"], @"options",
+								   nil];
+		[directives addObject:directive];
+	}
+	return directives;
 }
 
 - (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {

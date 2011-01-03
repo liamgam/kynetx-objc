@@ -9,6 +9,14 @@
 #import "Kynetx.h"
 
 
+// secret 
+@interface Kynetx ()
+// overwrite property
+@property (nonatomic, retain) NSString* eventDomain;
+
+@end
+
+
 @implementation Kynetx
 
 // property synthesis
@@ -17,42 +25,58 @@
 
 - (id) init	{
 	// just pass nil to preferred constructor
-	return [[[self alloc] initWithAppID:nil] autorelease]; // return allocated, autoreleased instance
+	return [self initWithAppID:nil];
 }
 
 - (id) initWithAppID:(id) input {
 	if (self = [super init]) {
-		if (input == nil) {
-			input = @"a369x123";
-		}
 		[self setAppid:input];
-		[self setEventDomain:@"desktop"];
+		// need to see if there's a better way to do this. 
+		// the purpose of this check is to see what event domain to set. 
+		// if NSapp is true, then we are in a Cocoa app
+		if (NSApp) {
+			[self setEventDomain:@"desktop"];
+		} else {
+			[self setEventDomain:@"iphone"];
+		}
 	}
-	return self; // need to return alloced instance
+	return self;
 }
 
 - (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
-	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]]]];
-	NSLog(@"Request URL: %@", request);
-	NSData* response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	[self URLFromDict:[[[NSDictionary alloc] initWithObjectsAndKeys:@"yay",@"bay", nil] autorelease] withBaseURL:@"fdskljfdsjkdfsjklsdfkjldfsjklfdsjkl"];
-	return [self parseDirectives:response];
+	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]];
+	NSURL* url = [self URLFromDict:params withBaseURL:urlString];
+	NSURLRequest* request = [NSURLRequest requestWithURL:url];
+	NSLog(@"Request: %@", request);
+	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	return [self parseDirectives:knsResponse];
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
 	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
 	NSString* responseString = [[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding] autorelease];
-	NSLog(@"KNS Response: %@", responseString);
 	NSRange knsCommentRange = NSMakeRange(0, 32);
 	NSString* jsonString = [responseString stringByReplacingCharactersInRange:knsCommentRange withString:@""];
-	NSLog(@"jsonString: %@", jsonString);
-	return [parser objectWithString:jsonString];
+	NSArray* rawDirectives = [[parser objectWithString:jsonString] objectForKey:@"directives"];
+	NSMutableArray* directives = [[[NSMutableArray alloc] initWithCapacity:20] autorelease];
+	for (NSDictionary *rawDirective in rawDirectives) {
+		NSDictionary* meta = [rawDirective objectForKey:@"meta"];
+		NSDictionary* directive = [NSDictionary dictionaryWithObjectsAndKeys:
+								   [meta objectForKey:@"rid"], @"rid",
+								   [meta objectForKey:@"rule_name"], @"rule_name",
+								   [meta objectForKey:@"txn_id"], @"txn_id",
+								   [rawDirective objectForKey:@"name"], @"action",
+								   [rawDirective objectForKey:@"options"], @"options",
+								   nil];
+		[directives addObject:directive];
+	}
+	return directives;
 }
 
 - (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
 	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
-	NSPredicate* hasQuestionMark = [[[NSPredicate alloc] initWithFormat:@"SELF matches %@", @"\?$"] autorelease];
-	if (![hasQuestionMark evaluateWithObject: URLstring]) {
+	NSRange questionMarkRange = [URLstring rangeOfString:@"?"];
+	if (questionMarkRange.location == NSNotFound || questionMarkRange.location != URLstring.length - 1) {
 		// if the base url string does not have a question mark at the end, we need to add it
 		[buildString appendFormat:@"%@%@", URLstring, @"?"];
 	} else {
@@ -66,8 +90,14 @@
 	for (int i = 0; i < count; i++) {
 		id key = [keys objectAtIndex:i];
 		id value = [params objectForKey:key];
-		
+		if (i != count - 1) {
+			[buildString appendFormat:@"%@=%@&",key,value];
+		} else {
+			[buildString appendFormat:@"%@=%@",key,value];
+		}
 	}
+	
+	return [[[NSURL alloc] initWithString:buildString] autorelease];
 }
 
 // destructor

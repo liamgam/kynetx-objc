@@ -15,7 +15,9 @@
 
 -(IBAction) sendTestKynetx:(id) sender {
 	[self setApp:[[Kynetx alloc] initWithAppID:[appIDField stringValue]]];
-	NSArray* ok = [app raiseEvent:@"jump_for_joy" params:[NSDictionary dictionaryWithObjectsAndKeys:@"yay", @"nay", @"ok", @"false", nil]];
+	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese", nil];
+	NSArray* directives = [app raiseEvent:@"jump_for_joy" params:urlParams];
+	NSLog(@"%@", directives);
 }
 
 -(IBAction) appIDVal:(id) sender {
