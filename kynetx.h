@@ -9,6 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import "JSON/JSON.h"
 
+/**
+ @mainpage Kynetx Objective-C Library
+ 
+ This is a library for interacting with <a href = "http://www.kynetx.com" target="_blank">Kynetx</a>.
+ @author Alex Olson
+
 /** 
  @brief An object that handles raising events to kynetx and parsing returned directives
  @author Alex Olson
