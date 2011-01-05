@@ -43,6 +43,7 @@
  */
 - (id) init;
 
+<<<<<<< HEAD
 /**
  @brief method to initialize with an App ID.
  
@@ -66,6 +67,31 @@
  @return void
  */
 - (void) signal:(NSString*) name params:(NSDictionary*) params;
+=======
+- (id) initWithAppID:(id) input {
+	if (self = [super init]) {
+		[self setAppid:input];
+		// need to see if there's a better way to do this. 
+		// the purpose of this check is to see what event domain to set. 
+		// if NSapp exists, then we are most likely in a Cocoa app
+		if (NSApp) {
+			[self setEventDomain:@"desktop"];
+		} else {
+			[self setEventDomain:@"mobile"];
+		}
+	}
+	return self;
+}
+
+- (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
+	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]];
+	NSURL* url = [self URLFromDict:params withBaseURL:urlString];
+	NSURLRequest* request = [NSURLRequest requestWithURL:url];
+	NSLog(@"Request: %@", request);
+	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	return [self parseDirectives:knsResponse];
+}
+>>>>>>> parent of de44750... Cookie handling.
 
 /**
  @brief parse directives returned by KNS for a raised event
