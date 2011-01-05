@@ -31,6 +31,7 @@
 	// build NSURL object
 	// start with a NSString base url
 	NSString* baseURL = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	// then construct url
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
