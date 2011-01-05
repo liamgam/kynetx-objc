@@ -28,7 +28,7 @@
  
  This is built-in and cannot be changed
  */
-@property (nonatomic, retain) NSString* eventDomain;
+@property (readonly, nonatomic, retain) NSString* eventDomain;
 
 /**
  @brief The appid to raise the specified events too
@@ -41,17 +41,16 @@
  @brief Basic init method.
  @return self 
  */
-- (id) init;
+-(id) init;
 
 /**
  @brief method to initialize with an App ID.
  
  This is the preferred initialization method. 
  @param input the appid to initialize the object with. 
- @param eventDomain the domain that all events will be raised under
  @return self
  */
-- (id) initWithAppID:(id) input eventDomain: (id) domain;
+-(id) initWithAppID:(id) input;
 
 /**
  @brief method to raise event to kynetx servers
@@ -62,17 +61,16 @@
  for more information regarding events.
  @param name name of the event to raise
  @param params a dictionary of key-value pairs to send to kynetx ruleset
- @param error an NSError reference to be populated on error
- @return void
+ @return result of parseDirectives
  */
-- (void) signal:(NSString*) name params:(NSDictionary*) params;
+-(NSArray*) raiseEvent:(NSString*) name params:(NSDictionary*) params; 
 
 /**
  @brief parse directives returned by KNS for a raised event
  @param response NSData* object returned by a GET request
  @return NSArray* of NSDictionary* directives
 */
-- (NSArray*) parseDirectives:(NSData*) response;
+-(NSArray*) parseDirectives:(NSData*) response;
 
 /**
  @brief build a NSURL* from a NSDictionary and a NSString
@@ -80,12 +78,13 @@
  @param URLString URL string to add params to
  @return NSURL* 
  */
-- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
+-(NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
 
 /** 
  @brief releases object alloced memory
  @return void
  */
-- (void) dealloc;
+-(void) dealloc;
+
 
 @end
