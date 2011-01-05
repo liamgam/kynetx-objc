@@ -28,7 +28,7 @@
  
  This is built-in and cannot be changed
  */
-@property (readonly, nonatomic, retain) NSString* eventDomain;
+@property (nonatomic, retain) NSString* eventDomain;
 
 /**
  @brief The appid to raise the specified events too
