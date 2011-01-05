@@ -31,14 +31,7 @@
 - (id) initWithAppID:(id) input {
 	if (self = [super init]) {
 		[self setAppid:input];
-		// need to see if there's a better way to do this. 
-		// the purpose of this check is to see what event domain to set. 
-		// if NSapp exists, then we are most likely in a Cocoa app
-		if (NSApp) {
-			[self setEventDomain:@"desktop"];
-		} else {
-			[self setEventDomain:@"mobile"];
-		}
+		[self setEventDomain:@"mobile"];
 	}
 	return self;
 }
@@ -47,8 +40,15 @@
 	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]];
 	NSURL* url = [self URLFromDict:params withBaseURL:urlString];
 	NSURLRequest* request = [NSURLRequest requestWithURL:url];
+	NSURLResponse* response;
 	NSLog(@"Request: %@", request);
-	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil]; // REST call.
+	NSArray* knsCookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[response allHeaderFields] forURL:url];
+	[[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:knsCookies forURL:url mainDocumentURL:nil];
+	NSLog(@"COOKIES!!!!!!!!!!!!!!!!!");
+	for(NSHTTPCookie *cookie in [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:url]) {
+		NSLog(@"NAME: %@, EXPIRATION DATE: %@ VALUE: %@", [cookie name], [cookie expiresDate], [cookie value]);
+	}
 	return [self parseDirectives:knsResponse];
 }
 
