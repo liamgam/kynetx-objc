@@ -8,19 +8,10 @@
 
 #import "Kynetx.h"
 
-
-// secret 
-@interface Kynetx ()
-// overwrite property
-@property (nonatomic, retain) NSString* eventDomain;
-
-@end
-
-
 @implementation Kynetx
 
 // property synthesis
-@synthesize appid;
+@synthesize appID;
 @synthesize eventDomain;
 
 - (id) init	{
@@ -28,37 +19,47 @@
 	return [self initWithAppID:nil];
 }
 
-- (id) initWithAppID:(id) input {
+- (id) initWithAppID:(id) input eventDomain:(id) domain {
 	if (self = [super init]) {
-		[self setAppid:input];
-		// need to see if there's a better way to do this. 
-		// the purpose of this check is to see what event domain to set. 
-		// if NSapp exists, then we are most likely in a Cocoa app
-		if (NSApp) {
-			[self setEventDomain:@"desktop"];
-		} else {
-			[self setEventDomain:@"mobile"];
+		[self setAppID:input];
+		[self setEventDomain:domain];
 		}
 	}
 	return self;
 }
 
-- (NSArray*) raiseEvent:(NSString *) name params:(NSDictionary*) params {
-	NSString* urlString = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@", [self eventDomain], name, [self appid]];
-	NSURL* url = [self URLFromDict:params withBaseURL:urlString];
-	NSURLRequest* request = [NSURLRequest requestWithURL:url];
-	NSLog(@"Request: %@", request);
-	NSData* knsResponse = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	return [self parseDirectives:knsResponse];
+- (NSArray*) signal:(NSString *) name params:(NSDictionary*) params {
+	// build NSURL object
+	// start with a NSString base url
+	NSString* baseURL = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], [self name], [self appID]];
+}
+
+- (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+}
+
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
+	// create an instance of the json parser
 	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
+	
+	// get a string representation of the NSData response
+	// make sure it is UTF-8 encoded
 	NSString* responseString = [[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding] autorelease];
+	
+	// make a range that will be used to strip
+	// the comment from the KNS response
 	NSRange knsCommentRange = NSMakeRange(0, 32);
+	// strip the comment off using the range
 	NSString* jsonString = [responseString stringByReplacingCharactersInRange:knsCommentRange withString:@""];
+	
+	// pass json parser the jsonString, and grab the directives object on the now-parsed json
 	NSArray* rawDirectives = [[parser objectWithString:jsonString] objectForKey:@"directives"];
+	// setup array to hold reworked directives
 	NSMutableArray* directives = [[[NSMutableArray alloc] initWithCapacity:20] autorelease];
+	
+	// rework directives and add it to the directives array 
 	for (NSDictionary *rawDirective in rawDirectives) {
 		NSDictionary* meta = [rawDirective objectForKey:@"meta"];
 		NSDictionary* directive = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -70,11 +71,15 @@
 								   nil];
 		[directives addObject:directive];
 	}
+	
 	return directives;
 }
 
 - (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
+	// setup mutable string
 	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
+	
+	// make a range to check for a question mark in URLString 
 	NSRange questionMarkRange = [URLstring rangeOfString:@"?"];
 	if (questionMarkRange.location == NSNotFound || questionMarkRange.location != URLstring.length - 1) {
 		// if the base url string does not have a question mark at the end, we need to add it
@@ -97,12 +102,14 @@
 		}
 	}
 	
+	// url is now complete
+	
 	return [[[NSURL alloc] initWithString:buildString] autorelease];
 }
 
 // destructor
 - (void) dealloc {
-	[appid release];
+	[appID release];
 	[eventDomain release];
 	[super dealloc];
 }

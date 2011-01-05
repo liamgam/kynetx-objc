@@ -35,7 +35,7 @@
  
  This is the ruleset that will recieve the events raised.
  */
-@property (nonatomic, retain) NSString* appid;
+@property (nonatomic, retain) NSString* appID;
 
 /** 
  @brief Basic init method.
@@ -50,7 +50,7 @@
  @param input the appid to initialize the object with. 
  @return self
  */
--(id) initWithAppID:(id) input;
+- (id) initWithAppID:(id) input eventDomain:(id) domain;
 
 /**
  @brief method to raise event to kynetx servers
@@ -61,16 +61,16 @@
  for more information regarding events.
  @param name name of the event to raise
  @param params a dictionary of key-value pairs to send to kynetx ruleset
- @return result of parseDirectives
+ @return void
  */
--(NSArray*) raiseEvent:(NSString*) name params:(NSDictionary*) params; 
+- (void) signal:(NSString*) name params:(NSDictionary*) params; 
 
 /**
  @brief parse directives returned by KNS for a raised event
  @param response NSData* object returned by a GET request
  @return NSArray* of NSDictionary* directives
 */
--(NSArray*) parseDirectives:(NSData*) response;
+- (NSArray*) parseDirectives:(NSData*) response;
 
 /**
  @brief build a NSURL* from a NSDictionary and a NSString
@@ -78,13 +78,13 @@
  @param URLString URL string to add params to
  @return NSURL* 
  */
--(NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
+- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
 
 /** 
  @brief releases object alloced memory
  @return void
  */
--(void) dealloc;
+- (void) dealloc;
 
 
 @end
