@@ -14,10 +14,9 @@
 @synthesize app;
 
 -(IBAction) sendTestKynetx:(id) sender {
-	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue]] autorelease]];
+	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] eventDomain:nil] autorelease]];
 	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese", nil];
-	NSArray* directives = [app raiseEvent:@"jump_for_joy" params:urlParams];
-	NSLog(@"%@", directives);
+	[app signal:@"jump_for_joy" params:urlParams];
 }
 
 -(IBAction) appIDVal:(id) sender {
