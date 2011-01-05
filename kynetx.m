@@ -16,22 +16,21 @@
 
 - (id) init	{
 	// just pass nil to preferred constructor
-	return [self initWithAppID:nil];
+	return [self initWithAppID:nil eventDomain:nil];
 }
 
 - (id) initWithAppID:(id) input eventDomain:(id) domain {
 	if (self = [super init]) {
 		[self setAppID:input];
 		[self setEventDomain:domain];
-		}
 	}
 	return self;
 }
 
-- (NSArray*) signal:(NSString *) name params:(NSDictionary*) params {
+- (void) signal:(NSString *) name params:(NSDictionary*) params {
 	// build NSURL object
 	// start with a NSString base url
-	NSString* baseURL = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], [self name], [self appID]];
+	NSString* baseURL = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
