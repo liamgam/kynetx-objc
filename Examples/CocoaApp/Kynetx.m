@@ -49,7 +49,7 @@
 	[KNSRequest setAllHTTPHeaderFields:headers];
 	// then use that request to make a connection
 	// specifying that the current object should act as its delegate
-	[[NSURLConnection alloc] initWithRequest:KNSRequest delegate:self];
+	[[[NSURLConnection alloc] initWithRequest:KNSRequest delegate:self] autorelease];
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -80,6 +80,12 @@
 	
 	// call delegate 
 	[[self delegate] didRecieveKNSDirectives:KNSDirectives];
+}
+
+- (void) connection:(NSURLConnection *)connection didFailWithError:(NSError*)error {
+	// something went wrong
+	// call appropriate delegate method
+	[[self delegate] KNSRequestDidFailWithError:error];
 }
 
 - (NSArray*) parseDirectives:(NSData*)response {

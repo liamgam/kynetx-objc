@@ -14,6 +14,7 @@
 
 @optional
 - (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives;
+- (void) KNSRequestDidFailWithError:(NSError*)error; 
 
 @end
 

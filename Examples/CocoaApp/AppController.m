@@ -30,6 +30,14 @@
 	NSLog(@"%@", KNSDirectives);
 }
 
+// another kynetx delegate method
+// this one gets called whe the KNS request fails 
+- (void) KNSRequestDidFailWithError:(NSError*)error {
+	// do stuff
+	// in this case, we'll just log the error's localized description
+	// of course you can access any valid NSError properties like localizedRecoveryOptions, domain etc.
+	NSLog(@"SOMETHING HORRIBLY SAD AND BAD AND NOT LEGIT JUST HAPPEND!!!! GAH!!! %@", [error localizedDescription]);
+}
 - (void) dealloc {
 	[super dealloc];
 }
