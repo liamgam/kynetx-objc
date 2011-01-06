@@ -15,10 +15,11 @@
 @synthesize eventDomain;
 
 - (id) init	{
-	// just pass nil to preferred constructor
+	// just pass nil to designated initializer
 	return [self initWithAppID:nil eventDomain:nil];
 }
 
+// this is the designated initializer
 - (id) initWithAppID:(id) input eventDomain:(id) domain {
 	if (self = [super init]) {
 		[self setAppID:input];
@@ -41,9 +42,23 @@
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+	// handle cookies
+	// cast base response to derived http url response class
+	// so we can access headers
+	NSHTTPURLResponse* KNSHTTPResponse = (NSHTTPURLResponse*) response;
+	// retrieve the cookies from the KNS response Set-Cookie header
+	// KNS just sends one Set-Cookie header, but this method will handle any
+	// number of returned Set-Cookie headers
+	NSArray* KNSCookies = [[NSHTTPCookie cookiesWithResponseHeaderFields:[KNSHTTPResponse allHeaderFields] 
+																  forURL:[KNSHTTPResponse URL]];
+	// add the KNSCookies to the shared cookie storage of the device
+	[[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:KNSCookies 
+						forURL:[KNSHTTPResponse URL] mainDocumentURL:nil];
+				
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+	// handle JSON returned from KNS
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
@@ -65,7 +80,8 @@
 	// setup array to hold reworked directives
 	NSMutableArray* directives = [[[NSMutableArray alloc] initWithCapacity:20] autorelease];
 	
-	// rework directives and add it to the directives array 
+	// rework each directive in the rawDirectives
+	// array and add it to the directives array 
 	for (NSDictionary *rawDirective in rawDirectives) {
 		NSDictionary* meta = [rawDirective objectForKey:@"meta"];
 		NSDictionary* directive = [NSDictionary dictionaryWithObjectsAndKeys:

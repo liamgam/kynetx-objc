@@ -9,6 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "JSON/JSON.h"
 
+// protocol for implementing Kynetx class delegate methods 
+@protocol KynetxDelegate <NSObject>
+
+@optional
+- (void) didRecieveKNSDirectives: (NSDictionary*) directives;
+
+@end
+
+
 /**
  @mainpage %Kynetx Objective-C Library
  This is a library for interacting with <a href = "http://www.kynetx.com" target="_blank">Kynetx</a>.
