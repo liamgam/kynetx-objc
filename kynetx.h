@@ -13,7 +13,7 @@
 @protocol KynetxDelegate <NSObject>
 
 @optional
-- (void) didRecieveKNSDirectives: (NSDictionary*) directives;
+- (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives;
 
 @end
 
@@ -46,6 +46,10 @@
  */
 @property (nonatomic, retain) NSString* appID;
 
+/**
+ @brief The object to act as Kynetx delegate
+*/
+@property (nonatomic, retain) id <KynetxDelegate> delegate;
 /** 
  @brief Basic init method.
  @return self 
@@ -56,10 +60,12 @@
  @brief method to initialize with an App ID.
  
  This is the preferred initialization method. 
- @param input the appid to initialize the object with. 
+ @param input the appid to initialize the object with.
+ @param eventDomain the domain for raised events
+ @param delegate an object to act as Kynetx delegate
  @return self
  */
-- (id) initWithAppID:(id) input eventDomain:(id) domain;
+- (id) initWithAppID:(id)input eventDomain:(id)domain delegate:(id)del;
 
 /**
  @brief method to raise event to kynetx servers
@@ -72,14 +78,14 @@
  @param params a dictionary of key-value pairs to send to kynetx ruleset
  @return void
  */
-- (void) signal:(NSString*) name params:(NSDictionary*) params; 
+- (void) signal:(NSString*)name params:(NSDictionary*)params; 
 
 /**
  @brief parse directives returned by KNS for a raised event
  @param response NSData* object returned by a GET request
  @return NSArray* of NSDictionary* directives
 */
-- (NSArray*) parseDirectives:(NSData*) response;
+- (NSArray*) parseDirectives:(NSData*)response;
 
 /**
  @brief build a NSURL* from a NSDictionary and a NSString
@@ -87,7 +93,7 @@
  @param URLString URL string to add params to
  @return NSURL* 
  */
-- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLString;
+- (NSURL*) URLFromDict:(NSDictionary*)params withBaseURL:(NSString*)URLString;
 
 /** 
  @brief releases object alloced memory

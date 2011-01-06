@@ -11,24 +11,24 @@
 @implementation Kynetx
 
 // property synthesis
-@synthesize appID;
-@synthesize eventDomain;
+@synthesize appID, eventDomain, delegate;
 
 - (id) init	{
 	// just pass nil to designated initializer
-	return [self initWithAppID:nil eventDomain:nil];
+	return [self initWithAppID:nil eventDomain:nil delegate:nil];
 }
 
 // this is the designated initializer
-- (id) initWithAppID:(id) input eventDomain:(id) domain {
+- (id) initWithAppID:(id)input eventDomain:(id)domain delegate:(id)del {
 	if (self = [super init]) {
 		[self setAppID:input];
 		[self setEventDomain:domain];
+		[self setDelegate:del];
 	}
 	return self;
 }
 
-- (void) signal:(NSString *) name params:(NSDictionary*) params {
+- (void) signal:(NSString *)name params:(NSDictionary*)params {
 	// raise events to kns
 	
 	// build the request URL
@@ -78,10 +78,11 @@
 	
 	NSArray* KNSDirectives = [self parseDirectives:data];
 	
-	// TODO: Finish this method up. Scheduled for tomorrow.
+	// call delegate 
+	[[self delegate] didRecieveKNSDirectives:KNSDirectives];
 }
 
-- (NSArray*) parseDirectives:(NSData*) response {
+- (NSArray*) parseDirectives:(NSData*)response {
 	// parse json string of directives returned from KNS
 	
 	// create an instance of the json parser
@@ -119,7 +120,7 @@
 	return directives;
 }
 
-- (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
+- (NSURL*) URLFromDict:(NSDictionary*)params withBaseURL:(NSString*)URLstring {
 	// construct a NSURL from a dictionary of paramaters and a base URL string
 	
 	// setup mutable string
@@ -158,6 +159,7 @@
 - (void) dealloc {
 	[appID release];
 	[eventDomain release];
+	[delegate release];
 	[super dealloc];
 }
 
