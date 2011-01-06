@@ -13,7 +13,7 @@
 @protocol KynetxDelegate <NSObject>
 
 @optional
-- (void) didRecieveKNSDirectives: (NSDictionary*) directives;
+- (void) didRecieveKNSDirectives:(NSDictionary*) KNSDirectives;
 
 @end
 
