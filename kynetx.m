@@ -30,7 +30,14 @@
 - (void) signal:(NSString *) name params:(NSDictionary*) params {
 	// build NSURL object
 	// start with a NSString base url
-	NSString* baseURL = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	NSString* baseURLstring = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	// then construct NSURL with the dict of params and baseURLstring
+	NSURL* eventURL = [self URLFromDict:params withBaseURL:baseURLstring];
+	
+	// construct a request object with eventURL
+	NSURLRequest* KNSRequest = [[[NSURLRequest alloc] initWithURL:eventURL] autorelease];
+	// then use that request to make a connection, delegate methods here 
+	[[NSURLConnection alloc] initWithRequest:KNSRequest delegate:self];
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
