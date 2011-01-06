@@ -39,7 +39,7 @@
 	
 	
 	// construct a request object with eventURL
-	NSMutableURLRequest* KNSRequest = [[[NSURLRequest alloc] initWithURL:eventURL] autorelease];
+	NSMutableURLRequest* KNSRequest = [[[NSMutableURLRequest alloc] initWithURL:eventURL] autorelease];
 	
 	// grab KNS cookies
 	NSArray* KNSCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:eventURL];

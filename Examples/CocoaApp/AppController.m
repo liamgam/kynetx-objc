@@ -13,17 +13,24 @@
 
 @synthesize app;
 
--(IBAction) sendTestKynetx:(id) sender {
-	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] eventDomain:@"mobile"] autorelease]];
+- (IBAction) sendTestKynetx:(id) sender {
+	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] eventDomain:@"mobile" delegate:self] autorelease]];
 	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese", nil];
 	[app signal:@"jump_for_joy" params:urlParams];
 }
 
--(IBAction) appIDVal:(id) sender {
+- (IBAction) appIDVal:(id) sender {
 	NSLog(@"%@",[appIDField stringValue]);
 }
 
--(void) dealloc {
+// kynetx delegate method
+- (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives {
+	// do stuff with directives
+	// for now we'll just log them
+	NSLog(@"%@", KNSDirectives);
+}
+
+- (void) dealloc {
 	[super dealloc];
 }
 
