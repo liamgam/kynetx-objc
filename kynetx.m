@@ -29,39 +29,59 @@
 }
 
 - (void) signal:(NSString *) name params:(NSDictionary*) params {
-	// build NSURL object
-	// start with a NSString base url
+	// raise events to kns
+	
+	// build the request URL
+	// start with a NSString base URL
 	NSString* baseURLstring = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
 	// then construct NSURL with the dict of params and baseURLstring
 	NSURL* eventURL = [self URLFromDict:params withBaseURL:baseURLstring];
 	
+	
 	// construct a request object with eventURL
-	NSURLRequest* KNSRequest = [[[NSURLRequest alloc] initWithURL:eventURL] autorelease];
-	// then use that request to make a connection, delegate methods here 
+	NSMutableURLRequest* KNSRequest = [[[NSURLRequest alloc] initWithURL:eventURL] autorelease];
+	
+	// grab KNS cookies
+	NSArray* KNSCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:eventURL];
+	// get a dictionary of HTTP headers using the cookies
+	NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:KNSCookies];
+	// set request headers from the dictionary of headers
+	[KNSRequest setAllHTTPHeaderFields:headers];
+	// then use that request to make a connection
+	// specifying that the current object should act as its delegate
 	[[NSURLConnection alloc] initWithRequest:KNSRequest delegate:self];
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
 	// handle cookies
+	
 	// cast base response to derived http url response class
 	// so we can access headers
 	NSHTTPURLResponse* KNSHTTPResponse = (NSHTTPURLResponse*) response;
 	// retrieve the cookies from the KNS response Set-Cookie header
 	// KNS just sends one Set-Cookie header, but this method will handle any
 	// number of returned Set-Cookie headers
-	NSArray* KNSCookies = [[NSHTTPCookie cookiesWithResponseHeaderFields:[KNSHTTPResponse allHeaderFields] 
-																  forURL:[KNSHTTPResponse URL]];
+	NSArray* KNSCookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[KNSHTTPResponse allHeaderFields] 
+																 forURL:[KNSHTTPResponse URL]];
 	// add the KNSCookies to the shared cookie storage of the device
 	[[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:KNSCookies 
-						forURL:[KNSHTTPResponse URL] mainDocumentURL:nil];
+													forURL:[KNSHTTPResponse URL] mainDocumentURL:nil];
 				
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	// handle JSON returned from KNS
+	// take returned data and parse it
+	// Then call KynetxDelegate method, passing it the
+	// dictionary of directives
+	// This is where we exit the current Kynetx
+	// object if everything goes well
+	
+	NSArray* KNSDirectives = [self parseDirectives:data];
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
+	// parse json string of directives returned from KNS
+	
 	// create an instance of the json parser
 	SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
 	
@@ -98,6 +118,8 @@
 }
 
 - (NSURL*) URLFromDict:(NSDictionary*) params withBaseURL:(NSString*) URLstring {
+	// construct a NSURL from a dictionary of paramaters and a base URL string
+	
 	// setup mutable string
 	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
 	
@@ -111,7 +133,8 @@
 		[buildString appendString:URLstring];
 	}
 	
-	// loop over params dictionary, appending each key-value pair to url string
+	// loop over the params dictionary
+	// appending each key-value pair as we go
 	NSArray* keys = [params allKeys];
 	int count = [keys count];
 	for (int i = 0; i < count; i++) {
@@ -124,7 +147,7 @@
 		}
 	}
 	
-	// url is now complete
+	// at this point, URL is now constructed and ready to be returned
 	
 	return [[[NSURL alloc] initWithString:buildString] autorelease];
 }
