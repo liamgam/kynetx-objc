@@ -77,6 +77,8 @@
 	// object if everything goes well
 	
 	NSArray* KNSDirectives = [self parseDirectives:data];
+	
+	// TODO: Finish this method up. Scheduled for tomorrow.
 }
 
 - (NSArray*) parseDirectives:(NSData*) response {
