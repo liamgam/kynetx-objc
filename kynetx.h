@@ -9,11 +9,25 @@
 #import <Cocoa/Cocoa.h>
 #import "JSON/JSON.h"
 
-// protocol for implementing Kynetx class delegate methods 
+/**
+ @brief A protocol defining methods that a kynetx
+ delegate class can implement
+*/
 @protocol KynetxDelegate <NSObject>
 
 @optional
+/**
+ @brief delegate method that gets called on a succesful kynetx request
+ @param KNSDirectives out parameter containing returned Kynetx directives
+ @return void
+*/
 - (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives;
+
+/**
+ @brief delegate method that gets called on a failed kynetx request
+ @param error out parameter containing error information
+ @return void
+*/
 - (void) KNSRequestDidFailWithError:(NSError*)error; 
 
 @end
