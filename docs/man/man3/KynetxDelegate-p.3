@@ -1,0 +1,60 @@
+.TH "KynetxDelegate-p" 3 "Fri Jan 7 2011" "Doxygen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KynetxDelegate-p \- 
+.PP
+A protocol defining methods that a kynetx delegate class can implement.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <kynetx.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(void) - \fBdidRecieveKNSDirectives:\fP"
+.br
+.RI "\fIdelegate method that gets called on a succesful kynetx request \fP"
+.ti -1c
+.RI "(void) - \fBKNSRequestDidFailWithError:\fP"
+.br
+.RI "\fIdelegate method that gets called on a failed kynetx request \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+A protocol defining methods that a kynetx delegate class can implement. 
+.SH "Member Function Documentation"
+.PP 
+.SS "- (void) didRecieveKNSDirectives: (NSArray *) KNSDirectives\fC [optional]\fP"
+.PP
+delegate method that gets called on a succesful kynetx request \fBParameters:\fP
+.RS 4
+\fIKNSDirectives\fP out parameter containing returned \fBKynetx\fP directives 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "- (void) KNSRequestDidFailWithError: (NSError *) error\fC [optional]\fP"
+.PP
+delegate method that gets called on a failed kynetx request \fBParameters:\fP
+.RS 4
+\fIerror\fP out parameter containing error information 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+void 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen from the source code.
