@@ -10,7 +10,7 @@
 #import "Kynetx.h"
 
 
-@interface AppController : NSObject {
+@interface MainWindowController : NSWindowController {
 
 	IBOutlet NSButton *testKynetx;
 	IBOutlet NSTextField *appIDField;

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F5186BF512D08AA700DFACB7 /* Kynetx.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BF412D08AA700DFACB7 /* Kynetx.m */; };
-		F5186BFC12D08AFF00DFACB7 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BFB12D08AFF00DFACB7 /* AppController.m */; };
+		F5186BFC12D08AFF00DFACB7 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5186BFB12D08AFF00DFACB7 /* MainWindowController.m */; };
+		F51C114112D76AD60016447E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51C114012D76AD60016447E /* MainMenu.xib */; };
+		F51C115412D76C180016447E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51C115312D76C180016447E /* MainWindow.xib */; };
 		F5B6873812D26DC6006E685C /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6872712D26DC6006E685C /* NSObject+JSON.m */; };
 		F5B6873912D26DC6006E685C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6872912D26DC6006E685C /* SBJsonParser.m */; };
 		F5B6873A12D26DC6006E685C /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6872B12D26DC6006E685C /* SBJsonStreamParser.m */; };
@@ -26,10 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* kynetx_objc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kynetx_objc_Prefix.pch; sourceTree = "<group>"; };
@@ -40,8 +38,10 @@
 		8D1107320486CEB800E47090 /* kynetx-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kynetx-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5186BED12D08A5A00DFACB7 /* Kynetx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kynetx.h; sourceTree = "<group>"; };
 		F5186BF412D08AA700DFACB7 /* Kynetx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kynetx.m; sourceTree = "<group>"; };
-		F5186BF812D08AEA00DFACB7 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		F5186BFB12D08AFF00DFACB7 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		F5186BF812D08AEA00DFACB7 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		F5186BFB12D08AFF00DFACB7 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		F51C114012D76AD60016447E /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F51C115312D76C180016447E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		F5B6872512D26DC6006E685C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		F5B6872612D26DC6006E685C /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		F5B6872712D26DC6006E685C /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 				256AC3D90F4B6AC300CF3369 /* AppDelegate.m */,
 				F5186BF412D08AA700DFACB7 /* Kynetx.m */,
 				F5186BED12D08A5A00DFACB7 /* Kynetx.h */,
-				F5186BFB12D08AFF00DFACB7 /* AppController.m */,
-				F5186BF812D08AEA00DFACB7 /* AppController.h */,
+				F5186BFB12D08AFF00DFACB7 /* MainWindowController.m */,
+				F5186BF812D08AEA00DFACB7 /* MainWindowController.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -120,9 +120,11 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				F51C114012D76AD60016447E /* MainMenu.xib */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				F51C115312D76C180016447E /* MainWindow.xib */,
 			);
 			name = "kynetx-objc";
 			sourceTree = "<group>";
@@ -140,8 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* kynetx_objc-Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -231,8 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				F51C114112D76AD60016447E /* MainMenu.xib in Resources */,
+				F51C115412D76C180016447E /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +246,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */,
 				F5186BF512D08AA700DFACB7 /* Kynetx.m in Sources */,
-				F5186BFC12D08AFF00DFACB7 /* AppController.m in Sources */,
+				F5186BFC12D08AFF00DFACB7 /* MainWindowController.m in Sources */,
 				F5B6873812D26DC6006E685C /* NSObject+JSON.m in Sources */,
 				F5B6873912D26DC6006E685C /* SBJsonParser.m in Sources */,
 				F5B6873A12D26DC6006E685C /* SBJsonStreamParser.m in Sources */,
@@ -260,25 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DDD58150DA1D0A300B32029 /* English */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C01FCF4B08A954540054247B /* Debug */ = {

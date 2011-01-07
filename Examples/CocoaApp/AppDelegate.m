@@ -6,13 +6,18 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainWindowController.h"
 @implementation AppDelegate
 
-@synthesize window;
+@synthesize windowController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// nothing here - on purpose.
+	[self setWindowController:[[[MainWindowController alloc] initWithWindowNibName:@"MainWindow"] autorelease]];
+	[[[self windowController] window] makeKeyAndOrderFront:self];
+}
+
+- (void) applicationWillTerminate:(NSNotification *)notification {
+	[[[self windowController] window] close];
 }
 
 @end

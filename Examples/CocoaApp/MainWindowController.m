@@ -6,10 +6,10 @@
 //  Copyright 2010 Kynetx. All rights reserved.
 //
 
-#import "AppController.h"
+#import "MainWindowController.h"
 
 
-@implementation AppController
+@implementation MainWindowController
 
 @synthesize app;
 

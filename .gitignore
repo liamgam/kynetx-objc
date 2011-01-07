@@ -1,6 +1,5 @@
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
-*.lproj
 *.xcodeproj
 *build
 *.pbxuser
