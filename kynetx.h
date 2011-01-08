@@ -6,7 +6,6 @@
 //  Copyright 2010 Kynetx. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "JSON/JSON.h"
 
 /**
