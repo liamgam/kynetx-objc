@@ -154,7 +154,6 @@
 		} else {
 			[buildString appendFormat:@"%@=%@",key,value];
 		}
-		NSLog(@"KEY: %@ VALUE: %@", key, value);
 	}
 	
 	// at this point, URL is now constructed and ready to be returned
