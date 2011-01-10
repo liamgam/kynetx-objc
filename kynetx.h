@@ -20,7 +20,7 @@
  @param KNSDirectives out parameter containing returned Kynetx directives
  @return void
 */
-- (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives;
+- (void) didReceiveKNSDirectives:(NSArray*)KNSDirectives;
 
 /**
  @brief delegate method that gets called on a failed kynetx request

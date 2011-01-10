@@ -79,7 +79,7 @@
 	NSArray* KNSDirectives = [self parseDirectives:data];
 	
 	// call delegate 
-	[[self delegate] didRecieveKNSDirectives:KNSDirectives];
+	[[self delegate] didReceiveKNSDirectives:KNSDirectives];
 }
 
 - (void) connection:(NSURLConnection *)connection didFailWithError:(NSError*)error {

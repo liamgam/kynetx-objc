@@ -24,7 +24,7 @@
 }
 
 // kynetx delegate method
-- (void) didRecieveKNSDirectives:(NSArray*)KNSDirectives {
+- (void) didReceiveKNSDirectives:(NSArray*)KNSDirectives {
 	// do stuff with directives
 	// for now we'll just log them
 	NSLog(@"%@", KNSDirectives);
