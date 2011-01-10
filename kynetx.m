@@ -147,13 +147,14 @@
 	NSArray* keys = [params allKeys];
 	int count = [keys count];
 	for (int i = 0; i < count; i++) {
-		id key = [keys objectAtIndex:i];
-		id value = [params objectForKey:key];
+		id key = [[keys objectAtIndex:i] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		id value = [[params objectForKey:key] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 		if (i != count - 1) {
 			[buildString appendFormat:@"%@=%@&",key,value];
 		} else {
 			[buildString appendFormat:@"%@=%@",key,value];
 		}
+		NSLog(@"KEY: %@ VALUE: %@", key, value);
 	}
 	
 	// at this point, URL is now constructed and ready to be returned
