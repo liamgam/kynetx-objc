@@ -43,7 +43,11 @@
  @author Alex Olson
  */
 @interface Kynetx : NSObject {
-	// silence is golden. Actually properties are golden. Hence this emptiness.
+	// backing instance vars for properties
+	@private
+	NSString* eventDomain_;
+	NSString* appID_;
+	id <KynetxDelegate> delegate_;
 }
 
 /** 

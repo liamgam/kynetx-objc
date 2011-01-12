@@ -11,7 +11,7 @@
 @implementation Kynetx
 
 // property synthesis
-@synthesize appID, eventDomain, delegate;
+@synthesize appID = appID_, eventDomain = eventDomain_, delegate = delegate_;
 
 - (id) init	{
 	// just pass nil to designated initializer
@@ -163,9 +163,9 @@
 
 // destructor
 - (void) dealloc {
-	[appID release];
-	[eventDomain release];
-	[delegate release];
+	[self.appID release];
+	[self.eventDomain release];
+	[self.delegate release];
 	[super dealloc];
 }
 
