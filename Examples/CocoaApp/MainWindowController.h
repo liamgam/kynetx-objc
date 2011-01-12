@@ -11,11 +11,14 @@
 
 
 @interface MainWindowController : NSWindowController {
-
+	
+	@private
+	Kynetx* app_;
+	
 	IBOutlet NSButton *testKynetx;
 	IBOutlet NSTextField *appIDField;
 }
-@property (retain) Kynetx* app;
+@property (nonatomic, retain) Kynetx* app;
 - (IBAction) sendTestKynetx:(id) sender;
 - (IBAction) appIDVal:(id) sender; 
 - (void) dealloc;

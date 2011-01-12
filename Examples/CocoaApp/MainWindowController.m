@@ -11,12 +11,12 @@
 
 @implementation MainWindowController
 
-@synthesize app;
+@synthesize app = app_;
 
 - (IBAction) sendTestKynetx:(id) sender {
 	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] eventDomain:@"mobile" delegate:self] autorelease]];
 	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese&whiz", nil];
-	[app signal:@"jump_for_joy" params:urlParams];
+	[self.app signal:@"jump_for_joy" params:urlParams];
 }
 
 - (IBAction) appIDVal:(id) sender {
