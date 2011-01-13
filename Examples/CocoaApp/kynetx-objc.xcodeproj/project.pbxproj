@@ -120,10 +120,10 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				F51C114012D76AD60016447E /* MainMenu.xib */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				F51C114012D76AD60016447E /* MainMenu.xib */,
 				F51C115312D76C180016447E /* MainWindow.xib */,
 			);
 			name = "kynetx-objc";

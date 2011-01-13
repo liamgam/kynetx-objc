@@ -14,8 +14,8 @@
 @synthesize app = app_;
 
 - (IBAction) sendTestKynetx:(id) sender {
-	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] eventDomain:@"mobile" delegate:self] autorelease]];
-	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese&whiz", nil];
+	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] appVersion:@"dev" eventDomain:@"mobile" delegate:self] autorelease]];
+	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese", nil];
 	[self.app signal:@"jump_for_joy" params:urlParams];
 }
 
@@ -27,7 +27,7 @@
 - (void) didReceiveKNSDirectives:(NSArray*)KNSDirectives {
 	// do stuff with directives
 	// for now we'll just log them
-	NSLog(@"%@", KNSDirectives);
+	NSLog(@"Directives: %@", KNSDirectives);
 }
 
 // another kynetx delegate method

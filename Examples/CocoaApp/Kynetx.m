@@ -11,62 +11,109 @@
 @implementation Kynetx
 
 // property synthesis
-@synthesize appID = appID_, eventDomain = eventDomain_, delegate = delegate_;
+@synthesize appID = appID_, 
+			appVersion = appVersion_,
+			sessionID = sessionID_,
+			issueNewSession = issueNewSession_,
+			eventDomain = eventDomain_, 
+			delegate = delegate_;
 
 - (id) init	{
 	// just pass nil to designated initializer
-	return [self initWithAppID:nil eventDomain:nil delegate:nil];
+	return [self initWithAppID:nil appVersion:nil eventDomain:nil delegate:nil];
 }
 
 // this is the designated initializer
-- (id) initWithAppID:(id)input eventDomain:(id)domain delegate:(id)del {
+- (id) initWithAppID:(id)input appVersion:(id)version eventDomain:(id)domain delegate:(id)del {
 	if (self = [super init]) {
 		[self setAppID:input];
+		[self setAppVersion:version];
 		[self setEventDomain:domain];
 		[self setDelegate:del];
+		[self setIssueNewSession:NO];
 	}
 	return self;
 }
 
 - (void) signal:(NSString *)name params:(NSDictionary*)params {
-	// raise events to kns
+	// raise events to KNS
 	
 	// build the request URL
 	// start with a NSString base URL
-	NSString* baseURLstring = [NSString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	NSMutableString* baseURLstring = [NSMutableString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	
+	// check for dev version of ruleset
+	if ([[self appVersion] isEqualToString: @"development"] || [[self appVersion] isEqualToString:@"dev"]) {
+		[baseURLstring appendFormat:@"?%@:kynetx_app_version=%@&",[self appID], [self appVersion]];
+	}
 	// then construct NSURL with the dict of params and baseURLstring
 	NSURL* eventURL = [self URLFromDict:params withBaseURL:baseURLstring];
-	
-	
 	// construct a request object with eventURL
-	NSMutableURLRequest* KNSRequest = [[[NSMutableURLRequest alloc] initWithURL:eventURL] autorelease];
-	
+	NSURLRequest* KNSRequest = [[[NSURLRequest alloc] initWithURL:eventURL] autorelease];
 	// grab KNS cookies
 	NSArray* KNSCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:eventURL];
-	// get a dictionary of HTTP headers using the cookies
-	NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:KNSCookies];
-	// set request headers from the dictionary of headers
-	[KNSRequest setAllHTTPHeaderFields:headers];
-	// then use that request to make a connection
+	// set our session ID
+	if ([KNSCookies count]) {
+		self.sessionID = [[KNSCookies objectAtIndex:0] value];
+	}
+	// use request to make a connection
 	// specifying that the current object should act as its delegate
+	NSLog(@" ----- KNS Request Details ----- ");
+	NSLog(@"URL: %@", [KNSRequest URL]);
+	NSLog(@"HTTP Method: %@", [KNSRequest HTTPMethod]);
+	NSLog(@"Session ID: %@", [self sessionID]);
+	NSLog(@" ----- End KNS Request Details ----- ");
+	// if we are asked to issue new session and there is 
+	// currently a stored session
+	if ([self issueNewSession] && [KNSCookies count]) {
+		NSLog(@"Asked to destroy current Session ID cookie.");
+		[[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:[KNSCookies objectAtIndex:0]];
+		NSLog(@"Session ID cookie destroyed.");
+	} else if ([self issueNewSession] && ![KNSCookies count]) { 
+		// if we are asked to issue a new session
+		// but there is no session cookie stored
+		NSLog(@"Asked to destroy current Session ID cookie, but there is no Session ID cookie currently stored. Skipping.");
+	}
 	[[[NSURLConnection alloc] initWithRequest:KNSRequest delegate:self] autorelease];
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	// handle cookies
+	// handle different sessionID's
 	
-	// cast base response to derived http url response class
-	// so we can access headers
+	// cast base response to derived HTTP url response class
+	// so we can access HTTP data about the response
 	NSHTTPURLResponse* KNSHTTPResponse = (NSHTTPURLResponse*) response;
 	// retrieve the cookies from the KNS response Set-Cookie header
 	// KNS just sends one Set-Cookie header, but this method will handle any
 	// number of returned Set-Cookie headers
 	NSArray* KNSCookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[KNSHTTPResponse allHeaderFields] 
 																 forURL:[KNSHTTPResponse URL]];
-	// add the KNSCookies to the shared cookie storage of the device
-	[[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:KNSCookies 
-													forURL:[KNSHTTPResponse URL] mainDocumentURL:nil];
-				
+	NSHTTPCookie* sessionIDCookie = [KNSCookies objectAtIndex:0];
+	NSString* returnedSessionID = [sessionIDCookie value];
+	NSString* oldSessionID = [self sessionID];
+	
+	if (![self issueNewSession] && !oldSessionID && returnedSessionID) {
+		// if there was no sessionID cookie stored, just set it to the cookie
+		// value returned from KNS
+		NSLog(@"There was no Session ID cookie stored.");
+		NSLog(@"Storing new Session ID cookie.");
+		self.sessionID = returnedSessionID;
+		NSLog(@"Session ID cookie stored.");
+	} else if ([self issueNewSession]) {
+		self.sessionID = returnedSessionID;
+		NSLog(@"New Session ID cookie issued successfully.");
+	} else if (![self issueNewSession] && oldSessionID && ![returnedSessionID isEqualToString:oldSessionID]) {
+		// if we were not asked to issue new session and KNS responds with new session
+		// TODO: send error to errorstack for this case
+		NSLog(@"Error: KNS Returned a different Session ID cookie than was sent with original request.");
+		NSLog(@"Session ID sent with request: %@", oldSessionID);
+		NSLog(@"Session ID returned from KNS: %@", returnedSessionID);
+		NSLog(@"Setting new SessionID.");
+		self.sessionID = returnedSessionID;
+	} else {
+		NSLog(@"New Session ID cookie was not issued.");
+	}
+	NSLog(@"Session ID: %@", [self sessionID]);
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
@@ -134,8 +181,11 @@
 	
 	// make a range to check for a question mark in URLString 
 	NSRange questionMarkRange = [URLstring rangeOfString:@"?"];
-	if (questionMarkRange.location == NSNotFound || questionMarkRange.location != URLstring.length - 1) {
-		// if the base url string does not have a question mark at the end, we need to add it
+	
+	// make a range to check if we are specifiying a particular ruleset version
+	NSRange devVersionRange = [URLstring rangeOfString:@"kynetx_app_version"];
+	if ((questionMarkRange.location == NSNotFound || questionMarkRange.location != URLstring.length - 1) && devVersionRange.location == NSNotFound) {
+		// if the base url string does not have a question mark at the end, and we are not specifying a ruleset version, we need to add it
 		[buildString appendFormat:@"%@%@", URLstring, @"?"];
 	} else {
 		// no question mark needed
@@ -164,6 +214,8 @@
 // destructor
 - (void) dealloc {
 	[self.appID release];
+	[self.appVersion release];
+	[self.sessionID release];
 	[self.eventDomain release];
 	[self.delegate release];
 	[super dealloc];
