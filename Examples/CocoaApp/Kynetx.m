@@ -26,6 +26,13 @@
 // this is the designated initializer
 - (id) initWithAppID:(id)input appVersion:(id)version eventDomain:(id)domain delegate:(id)del {
 	if (self = [super init]) {
+		NSURL* baseKNSURL = [NSURL URLWithString:@"https://cs.kobj.net/"];
+		NSArray* KNSCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:baseKNSURL];
+		if ([KNSCookies count]) {
+			[self setSessionID:[[KNSCookies objectAtIndex:0] value]];
+		} else {
+			[self setSessionID:@"Not Set"];
+		}
 		[self setAppID:input];
 		[self setAppVersion:version];
 		[self setEventDomain:domain];
