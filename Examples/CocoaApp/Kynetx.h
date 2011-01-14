@@ -46,7 +46,7 @@
 	// backing instance vars for properties
 	@private
 	NSString* eventDomain_;
-	NSString* appID_;
+	id appID_;
 	NSString* appVersion_;
 	NSString* sessionID_;
 	BOOL issueNewSession_;
@@ -58,14 +58,15 @@
  
  This is built-in and cannot be changed
  */
-@property (nonatomic, retain) NSString* eventDomain;
+@property (nonatomic, copy) NSString* eventDomain;
 
 /**
  @brief The appid to raise the specified events to
  
  This is the ruleset that will recieve the events raised.
+ Can be an array or string
  */
-@property (nonatomic, retain) NSString* appID;
+@property (nonatomic, retain) id appID;
 
 /**
  @brief The object to act as Kynetx delegate
@@ -75,12 +76,12 @@
 /**
  @brief The version of the ruleset to raise events to
 */
-@property (nonatomic, retain) NSString* appVersion;
+@property (nonatomic, copy) NSString* appVersion;
 
 /**
  @brief KNS session ID
 */
-@property (nonatomic, retain) NSString* sessionID;
+@property (nonatomic, copy) NSString* sessionID;
 
 /** 
  @breif Boolean value to determine if we should issue new KNS session

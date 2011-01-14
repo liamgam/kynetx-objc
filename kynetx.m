@@ -47,7 +47,24 @@
 	
 	// build the request URL
 	// start with a NSString base URL
-	NSMutableString* baseURLstring = [NSMutableString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, [self appID]];
+	
+	NSMutableString* appIDs = [NSMutableString string];
+	if ([self.appID isKindOfClass:[NSString class]]) {
+		// if its a string
+		[appIDs appendFormat:@"%@", [self appID]];
+	} else if ([self.appID isKindOfClass:[NSArray class]]) {
+		// if its an array
+		int i = 0;
+		for (NSString* app in [self appID]) {
+			if (i < [[self	appID] count] - 1) {
+				[appIDs appendFormat:@"%@,", app];
+			} else {
+				[appIDs appendFormat:@"%@", app];
+			}
+			i++;
+		}
+	}
+	NSMutableString* baseURLstring = [NSMutableString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, appIDs];
 	
 	// check for dev version of ruleset
 	if ([[self appVersion] isEqualToString: @"development"] || [[self appVersion] isEqualToString:@"dev"]) {
