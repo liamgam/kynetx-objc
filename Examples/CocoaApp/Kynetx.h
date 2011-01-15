@@ -46,8 +46,7 @@
 	// backing instance vars for properties
 	@private
 	NSString* eventDomain_;
-	id appID_;
-	NSString* appVersion_;
+	NSDictionary* apps_;
 	NSString* sessionID_;
 	BOOL issueNewSession_;
 	id <KynetxDelegate> delegate_;
@@ -61,22 +60,16 @@
 @property (nonatomic, copy) NSString* eventDomain;
 
 /**
- @brief The appid to raise the specified events to
+ @brief The apps to raise the specified events to
  
- This is the ruleset that will recieve the events raised.
- Can be an array or string
+ These are the rulesets that will recieve the events raised.
  */
-@property (nonatomic, retain) id appID;
+@property (nonatomic, retain) NSDictionary* apps;
 
 /**
  @brief The object to act as Kynetx delegate
 */
 @property (nonatomic, retain) id <KynetxDelegate> delegate;
-
-/**
- @brief The version of the ruleset to raise events to
-*/
-@property (nonatomic, copy) NSString* appVersion;
 
 /**
  @brief KNS session ID
@@ -100,13 +93,12 @@
  @brief method to initialize with an App ID.
  
  This is the preferred initialization method. 
- @param input the appid to initialize the object with.
- @param appVersion version of app to raise events to
+ @param appsDict dictionary of apps and versions
  @param eventDomain the domain for raised events
  @param delegate an object to act as Kynetx delegate
  @return self
  */
-- (id) initWithAppID:(id)input appVersion:(id)version eventDomain:(id)domain delegate:(id)del;
+- (id) initWithApps:(id)appsDict eventDomain:(id)domain delegate:(id)del;
 
 /**
  @brief method to raise event to kynetx servers

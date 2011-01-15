@@ -11,8 +11,7 @@
 @implementation Kynetx
 
 // property synthesis
-@synthesize appID = appID_, 
-			appVersion = appVersion_,
+@synthesize apps = apps_, 
 			sessionID = sessionID_,
 			issueNewSession = issueNewSession_,
 			eventDomain = eventDomain_, 
@@ -20,11 +19,11 @@
 
 - (id) init	{
 	// just pass nil to designated initializer
-	return [self initWithAppID:nil appVersion:nil eventDomain:nil delegate:nil];
+	return [self initWithApps:nil eventDomain:nil delegate:nil];
 }
 
 // this is the designated initializer
-- (id) initWithAppID:(id)input appVersion:(id)version eventDomain:(id)domain delegate:(id)del {
+- (id) initWithApps:(id)appsDict eventDomain:(id)domain delegate:(id)del {
 	if (self = [super init]) {
 		NSURL* baseKNSURL = [NSURL URLWithString:@"https://cs.kobj.net/"];
 		NSArray* KNSCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:baseKNSURL];
@@ -33,8 +32,7 @@
 		} else {
 			[self setSessionID:@"Not Set"];
 		}
-		[self setAppID:input];
-		[self setAppVersion:version];
+		[self setApps:appsDict];
 		[self setEventDomain:domain];
 		[self setDelegate:del];
 		[self setIssueNewSession:NO];
@@ -48,28 +46,30 @@
 	// build the request URL
 	// start with a NSString base URL
 	
-	NSMutableString* appIDs = [NSMutableString string];
-	if ([self.appID isKindOfClass:[NSString class]]) {
-		// if its a string
-		[appIDs appendFormat:@"%@", [self appID]];
-	} else if ([self.appID isKindOfClass:[NSArray class]]) {
-		// if its an array
-		int i = 0;
-		for (NSString* app in [self appID]) {
-			if (i < [[self	appID] count] - 1) {
-				[appIDs appendFormat:@"%@,", app];
-			} else {
-				[appIDs appendFormat:@"%@", app];
-			}
-			i++;
+	NSArray* appIDs = [self.apps allKeys];
+	NSLog(@"All Keys: %@", appIDs);
+	int keyCount = [[self.apps allKeys] count];
+	NSMutableString* urlAppIDs = [NSMutableString string]; 
+	for (int i = 0; i < keyCount; i++) {
+		NSString* toAppend = [[appIDs objectAtIndex:i] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		if (i < [appIDs count] - 1) {
+			[urlAppIDs appendFormat:@"%@;", toAppend];
+		} else {
+			[urlAppIDs appendFormat:@"%@", toAppend];
 		}
 	}
-	NSMutableString* baseURLstring = [NSMutableString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/", [self eventDomain], name, appIDs];
+			
+	NSMutableString* baseURLstring = [NSMutableString stringWithFormat:@"https://cs.kobj.net/blue/event/%@/%@/%@/?", [self eventDomain], name, urlAppIDs];
 	
-	// check for dev version of ruleset
-	if ([[self appVersion] isEqualToString: @"development"] || [[self appVersion] isEqualToString:@"dev"]) {
-		[baseURLstring appendFormat:@"?%@:kynetx_app_version=%@&",[self appID], [self appVersion]];
-	}
+	[self.apps enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
+		// append it
+		key = [[NSString stringWithFormat:@"%@:kynetx_app_version", key]
+			   stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		value = [value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		NSString* toAppend = [NSString stringWithFormat:@"%@=%@&", key, value];
+		[baseURLstring appendString:toAppend];
+	}];
+		
 	// then construct NSURL with the dict of params and baseURLstring
 	NSURL* eventURL = [self URLFromDict:params withBaseURL:baseURLstring];
 	// construct a request object with eventURL
@@ -202,22 +202,12 @@
 	
 	// setup mutable string
 	NSMutableString* buildString = [[[NSMutableString alloc] init] autorelease];
-	
-	// make a range to check for a question mark in URLString 
-	NSRange questionMarkRange = [URLstring rangeOfString:@"?"];
-	
-	// make a range to check if we are specifiying a particular ruleset version
-	NSRange devVersionRange = [URLstring rangeOfString:@"kynetx_app_version"];
-	if ((questionMarkRange.location == NSNotFound || questionMarkRange.location != URLstring.length - 1) && devVersionRange.location == NSNotFound) {
-		// if the base url string does not have a question mark at the end, and we are not specifying a ruleset version, we need to add it
-		[buildString appendFormat:@"%@%@", URLstring, @"?"];
-	} else {
-		// no question mark needed
-		[buildString appendString:URLstring];
-	}
+	[buildString appendString:URLstring];
 	
 	// loop over the params dictionary
 	// appending each key-value pair as we go
+	// not using block method here because 
+	// of the way we are appending parameters
 	NSArray* keys = [params allKeys];
 	int count = [keys count];
 	for (int i = 0; i < count; i++) {
@@ -237,8 +227,7 @@
 
 // destructor
 - (void) dealloc {
-	[self.appID release];
-	[self.appVersion release];
+	[self.apps release];
 	[self.sessionID release];
 	[self.eventDomain release];
 	[self.delegate release];

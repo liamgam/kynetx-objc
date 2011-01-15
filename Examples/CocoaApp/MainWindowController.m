@@ -14,7 +14,9 @@
 @synthesize app = app_;
 
 - (IBAction) sendTestKynetx:(id) sender {
-	[self setApp:[[[Kynetx alloc] initWithAppID:[appIDField stringValue] appVersion:@"dev" eventDomain:@"mobile" delegate:self] autorelease]];
+	NSDictionary* apps = [NSDictionary dictionaryWithObjectsAndKeys:@"dev", @"a369x126", nil];
+	
+	[self setApp:[[[Kynetx alloc] initWithApps:apps eventDomain:@"mobile" delegate:self] autorelease]];
 	NSDictionary* urlParams = [NSDictionary dictionaryWithObjectsAndKeys:@"bar", @"foo", @"whiz", @"cheese", nil];
 	[self.app signal:@"jump_for_joy" params:urlParams];
 }
